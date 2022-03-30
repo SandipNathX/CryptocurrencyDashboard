@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="10"/>
+  <meta name="description" content="Cryptocurrency Dashboard" property="og:description" />
+  <meta name="author" content="Sandip Nath" />
+  <meta name="robots" content="index, follow">
+  <meta name="generator" content="Website powered by Sandipnath.com" />
+  <meta property="og:title" content="Cryptocurrency Dashboard" />
+  <meta property="og:description" content="Cryptocurrency Dashboard" />
+  <meta property="og:image" content="https://sandipnath.com/cryptocurrency-dashboard/images/cryptocurrency-dashboard1.png" />
+  <title>Cryptocurrency Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 1px 2px 4px rgb(0 0 0 / 80%);
+
+    }
+
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      background: rgb(25, 27, 31);
+    }
+
+    table td:second-child {
+      font-weight: bold;
+    }
+
+    table span {
+      vertical-align: middle;
+    }
+
+    table img {
+      width: 30px;
+      margin-right: 8px;
+    }
+
+    .table>tbody {
+      line-height: 60px;
+    }
+
+    table {
+      white-space: nowrap;
+    }
+
+    .table>thead {
+      background: #24272f;
+      line-height: 40px;
+    }
+
+    tr:hover {
+      background: #24272f;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0 50px 0;
+      color: rgb(9, 255, 0);
+      font-weight: bold;
+    }
+
+    #bitcoin-symbol,
+    #ethereum-symbol,
+    #tether-symbol,
+    #bnb-symbol,
+    #usdc-symbol,
+    #xrp-symbol,
+    #cardano-symbol,
+    #solana-symbol,
+    #terra-symbol,
+    #avalanche-symbol {
+      text-transform: uppercase;
+      margin: 0px 0px 0px 6px;
+      color: rgb(255, 255, 255);
+    }
+
+    .container {
+      background: rgb(31, 33, 40);
+      -webkit-box-shadow: 0px 0px 22px 5px RGB(9, 255, 0, 0.8);
+      box-shadow: 0px 0px 16px 5px RGB(9, 255, 0, 0.8);
+      border-radius: 30px;
+      color: #fff !important;
+      padding: 30px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: 949px) {
+      .container {
+        padding: 30px 0;
+        width: 90%;
+      }
+
+      .table-responsive {
+        overflow-y: hidden;
+        overflow-x: auto;
+      }
+
+      table tr {
+        width: 100%;
+      }
+
+      .sticky-col {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        background: rgb(31, 33, 40) !important;
+      }
+
+      .sticky-col-header {
+        position: -webkit-sticky;
+        position: sticky;
+        left: 0;
+        background: #24272f !important;
+      }
+
+    }
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: rgb(9, 255, 0) rgba(202, 202, 202, 0.314);
+    }
+    *::-webkit-scrollbar {
+      background-color: transparent;
+      width: 11px
+    }
+
+    *::-webkit-scrollbar-track {
+      background: rgba(9, 255, 0, .3137254901960784);
+      box-shadow: inset 0 0 2px#585858
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background: rgb(9, 255, 0);
+      border-radius: 20px
+    }
+
+    footer {
+      margin-top: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Cryptocurrency Dashboard</h1>
+    <div class="table-responsive" style="color: #fff;">
+      <table class="table" style="color: #fff;" id="tab">
+        <thead>
+          <tr>
+            <th class="sticky-col-header">#</th>
+            <th class="sticky-col-header">Coin</th>
+            <th>Price</th>
+            <th>24h Change</th>
+            <th>Market Cap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sticky-col"><span id="bitcoin-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="bitcoin-image" alt=""><span id="bitcoin-name"></span><span
+                id="bitcoin-symbol"> </span></td>
+            <td>$<span id="bitcoin-price"></span></td>
+            <td><span id="bitcoin-24h-change"></span></td>
+            <td>$<span id="bitcoin-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="ethereum-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="ethereum-image" alt=""><span id="ethereum-name"></span><span
+                id="ethereum-symbol"> </span></td>
+            <td>$<span id="ethereum-price"></span></td>
+            <td><span id="ethereum-24h-change"></span></td>
+            <td>$<span id="ethereum-market-cap"></span></td>
+          </tr>
+
+          <tr>
+            <td class="sticky-col"><span id="tether-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="tether-image" alt=""><span id="tether-name"></span><span
+                id="tether-symbol"> </span></td>
+            <td>$<span id="tether-price"></span></td>
+            <td><span id="tether-24h-change"></span></td>
+            <td>$<span id="tether-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="bnb-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="bnb-image" alt=""><span id="bnb-name"></span><span id="bnb-symbol">
+              </span></td>
+            <td>$<span id="bnb-price"></span></td>
+            <td><span id="bnb-24h-change"></span></td>
+            <td>$<span id="bnb-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="usdc-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="usdc-image" alt=""><span id="usdc-name"></span><span
+                id="usdc-symbol"> </span></td>
+            <td>$<span id="usdc-price"></span></td>
+            <td><span id="usdc-24h-change"></span></td>
+            <td>$<span id="usdc-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="xrp-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="xrp-image" alt=""><span id="xrp-name"></span><span id="xrp-symbol">
+              </span></td>
+            <td>$<span id="xrp-price"></span></td>
+            <td><span id="xrp-24h-change"></span></td>
+            <td>$<span id="xrp-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="cardano-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="cardano-image" alt=""><span id="cardano-name"></span><span
+                id="cardano-symbol"> </span></td>
+            <td>$<span id="cardano-price"></span></td>
+            <td><span id="cardano-24h-change"></span></td>
+            <td>$<span id="cardano-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="solana-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="solana-image" alt=""><span id="solana-name"></span><span
+                id="solana-symbol"> </span></td>
+            <td>$<span id="solana-price"></span></td>
+            <td><span id="solana-24h-change"></span></td>
+            <td>$<span id="solana-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="terra-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="terra-image" alt=""><span id="terra-name"></span><span
+                id="terra-symbol"> </span></td>
+            <td>$<span id="terra-price"></span></td>
+            <td><span id="terra-24h-change"></span></td>
+            <td>$<span id="terra-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="avalanche-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="avalanche-image" alt=""><span id="avalanche-name"></span><span
+                id="avalanche-symbol"> </span></td>
+            <td>$<span id="avalanche-price"></span></td>
+            <td><span id="avalanche-24h-change"></span></td>
+            <td>$<span id="avalanche-market-cap"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <footer>&nbsp;</footer>
+
+  <script>
+
+    var btcMarketCapRank = document.getElementById("bitcoin-market-cap-rank");
+    var btcName = document.getElementById("bitcoin-name");
+    var btcSymbol = document.getElementById("bitcoin-symbol");
+    const btcImage = document.getElementById("bitcoin-image");
+    var btcPrice = document.getElementById("bitcoin-price");
+    var btc24HPriceChange = document.getElementById("bitcoin-24h-change");
+    var btcMarketCap = document.getElementById("bitcoin-market-cap");
+
+    var ethMarketCapRank = document.getElementById("ethereum-market-cap-rank");
+    var ethName = document.getElementById("ethereum-name");
+    var ethSymbol = document.getElementById("ethereum-symbol");
+    const ethImage = document.getElementById("ethereum-image");
+    var ethPrice = document.getElementById("ethereum-price");
+    var eth24HPriceChange = document.getElementById("ethereum-24h-change");
+    var ethMarketCap = document.getElementById("ethereum-market-cap");
+
+    var usdtMarketCapRank = document.getElementById("tether-market-cap-rank");
+    var usdtName = document.getElementById("tether-name");
+    var usdtSymbol = document.getElementById("tether-symbol");
+    const usdtImage = document.getElementById("tether-image");
+    var usdtPrice = document.getElementById("tether-price");
+    var usdt24HPriceChange = document.getElementById("tether-24h-change");
+    var usdtMarketCap = document.getElementById("tether-market-cap");
+
+    var bnbMarketCapRank = document.getElementById("bnb-market-cap-rank");
+    var bnbName = document.getElementById("bnb-name");
+    var bnbSymbol = document.getElementById("bnb-symbol");
+    const bnbImage = document.getElementById("bnb-image");
+    var bnbPrice = document.getElementById("bnb-price");
+    var bnb24HPriceChange = document.getElementById("bnb-24h-change");
+    var bnbMarketCap = document.getElementById("bnb-market-cap");
+
+    var usdcMarketCapRank = document.getElementById("usdc-market-cap-rank");
+    var usdcName = document.getElementById("usdc-name");
+    var usdcSymbol = document.getElementById("usdc-symbol");
+    const usdcImage = document.getElementById("usdc-image");
+    var usdcPrice = document.getElementById("usdc-price");
+    var usdc24HPriceChange = document.getElementById("usdc-24h-change");
+    var usdcMarketCap = document.getElementById("usdc-market-cap");
+
+    var xrpMarketCapRank = document.getElementById("xrp-market-cap-rank");
+    var xrpName = document.getElementById("xrp-name");
+    var xrpSymbol = document.getElementById("xrp-symbol");
+    const xrpImage = document.getElementById("xrp-image");
+    var xrpPrice = document.getElementById("xrp-price");
+    var xrp24HPriceChange = document.getElementById("xrp-24h-change");
+    var xrpMarketCap = document.getElementById("xrp-market-cap");
+
+    var adaMarketCapRank = document.getElementById("cardano-market-cap-rank");
+    var adaName = document.getElementById("cardano-name");
+    var adaSymbol = document.getElementById("cardano-symbol");
+    const adaImage = document.getElementById("cardano-image");
+    var adaPrice = document.getElementById("cardano-price");
+    var ada24HPriceChange = document.getElementById("cardano-24h-change");
+    var adaMarketCap = document.getElementById("cardano-market-cap");
+
+    var solMarketCapRank = document.getElementById("solana-market-cap-rank");
+    var solName = document.getElementById("solana-name");
+    var solSymbol = document.getElementById("solana-symbol");
+    const solImage = document.getElementById("solana-image");
+    var solPrice = document.getElementById("solana-price");
+    var sol24HPriceChange = document.getElementById("solana-24h-change");
+    var solMarketCap = document.getElementById("solana-market-cap");
+
+    var lunaMarketCapRank = document.getElementById("terra-market-cap-rank");
+    var lunaName = document.getElementById("terra-name");
+    var lunaSymbol = document.getElementById("terra-symbol");
+    const lunaImage = document.getElementById("terra-image");
+    var lunaPrice = document.getElementById("terra-price");
+    var luna24HPriceChange = document.getElementById("terra-24h-change");
+    var lunaMarketCap = document.getElementById("terra-market-cap");
+
+    var avaxMarketCapRank = document.getElementById("avalanche-market-cap-rank");
+    var avaxName = document.getElementById("avalanche-name");
+    var avaxSymbol = document.getElementById("avalanche-symbol");
+    const avaxImage = document.getElementById("avalanche-image");
+    var avaxPrice = document.getElementById("avalanche-price");
+    var avax24HPriceChange = document.getElementById("avalanche-24h-change");
+    var avaxMarketCap = document.getElementById("avalanche-market-cap");
+
+    var settings = {
+      "async": true,
+      "scrossDomain": true,
+      "url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&ids=bitcoin%2Cethereum%2Ctether%2Cbinancecoin%2Cusd-coin%2Cripple%2Ccardano%2Csolana%2Cterra-luna%2Cavalanche-2&order=market_cap_desc&per_page=100&page=1&sparkline=false",
+      "method": "GET",
+      "headers": {}
+    }
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+
+      btcMarketCapRank.innerHTML = response["0"].market_cap_rank;
+      btcName.innerHTML = response["0"].name;
+      btcSymbol.innerHTML = response["0"].symbol;
+      btcImage.setAttribute('src', response["0"].image);
+      btcPrice.innerHTML = response["0"].current_price.toLocaleString();
+      btc24HPriceChange.innerHTML = Math.floor(response["0"].price_change_percentage_24h * 100) / 100;
+      btcMarketCap.innerHTML = response["0"].market_cap.toLocaleString();
+      var btc24HPriceChange1 = Math.floor(response["0"].price_change_percentage_24h * 100) / 100;
+      let percentagebtc = $('#bitcoin-24h-change');
+      if (btc24HPriceChange1 < 0) {
+        document.getElementById("bitcoin-24h-change").style.color = "#ff0000";
+        percentagebtc.text(percentagebtc.text() + '%');
+      }
+      else if (btc24HPriceChange1 >= 0) {
+        document.getElementById("bitcoin-24h-change").style.color = "rgb(9, 255, 0)";
+        percentagebtc.text(percentagebtc.text() + '%');
+      }
+
+      ethMarketCapRank.innerHTML = response["1"].market_cap_rank;
+      ethName.innerHTML = response["1"].name;
+      ethSymbol.innerHTML = response["1"].symbol;
+      ethImage.setAttribute('src', response["1"].image);
+      ethPrice.innerHTML = response["1"].current_price.toLocaleString();
+      eth24HPriceChange.innerHTML = Math.floor(response["1"].price_change_percentage_24h * 100) / 100;
+      ethMarketCap.innerHTML = response["1"].market_cap.toLocaleString();
+      var eth24HPriceChange1 = Math.floor(response["1"].price_change_percentage_24h * 100) / 100;
+      let percentageeth = $('#ethereum-24h-change');
+      if (eth24HPriceChange1 < 0) {
+        document.getElementById("ethereum-24h-change").style.color = "#ff0000";
+        percentageeth.text(percentageeth.text() + '%');
+      }
+      else if (eth24HPriceChange1 >= 0) {
+        document.getElementById("ethereum-24h-change").style.color = "rgb(9, 255, 0)";
+        percentageeth.text(percentageeth.text() + '%');
+      }
+
+      usdtMarketCapRank.innerHTML = response["2"].market_cap_rank;
+      usdtName.innerHTML = response["2"].name;
+      usdtSymbol.innerHTML = response["2"].symbol;
+      usdtImage.setAttribute('src', response["2"].image);
+      usdtPrice.innerHTML = response["2"].current_price.toLocaleString();
+      usdt24HPriceChange.innerHTML = Math.floor(response["2"].price_change_percentage_24h * 100) / 100;
+      var usdt24HPriceChange1 = Math.floor(response["2"].price_change_percentage_24h * 100) / 100;
+      let percentageusdt = $('#tether-24h-change');
+      if (usdt24HPriceChange1 < 0) {
+        document.getElementById("tether-24h-change").style.color = "#ff0000";
+        percentageusdt.text(percentageusdt.text() + '%');
+      }
+      else if (usdt24HPriceChange1 >= 0) {
+        document.getElementById("tether-24h-change").style.color = "rgb(9, 255, 0)";
+        percentageusdt.text(percentageusdt.text() + '%');
+      }
+
+      usdtMarketCap.innerHTML = response["2"].market_cap.toLocaleString();
+
+      bnbMarketCapRank.innerHTML = response["3"].market_cap_rank;
+      bnbName.innerHTML = response["3"].name;
+      bnbSymbol.innerHTML = response["3"].symbol;
+      bnbImage.setAttribute('src', response["3"].image);
+      bnbPrice.innerHTML = response["3"].current_price.toLocaleString();
+      bnb24HPriceChange.innerHTML = Math.floor(response["3"].price_change_percentage_24h * 100) / 100;
+      bnbMarketCap.innerHTML = response["3"].market_cap.toLocaleString();
+
+      var bnb24HPriceChange1 = Math.floor(response["3"].price_change_percentage_24h * 100) / 100;
+      let percentagebnb = $('#bnb-24h-change');
+      if (bnb24HPriceChange1 < 0) {
+        document.getElementById("bnb-24h-change").style.color = "#ff0000";
+        percentagebnb.text(percentagebnb.text() + '%');
+      }
+      else if (bnb24HPriceChange1 >= 0) {
+        document.getElementById("bnb-24h-change").style.color = "rgb(9, 255, 0)";
+        percentagebnb.text(percentagebnb.text() + '%');
+      }
+
+      usdcMarketCapRank.innerHTML = response["4"].market_cap_rank;
+      usdcName.innerHTML = response["4"].name;
+      usdcSymbol.innerHTML = response["4"].symbol;
+      usdcImage.setAttribute('src', response["4"].image);
+      usdcPrice.innerHTML = response["4"].current_price.toLocaleString();
+      usdc24HPriceChange.innerHTML = Math.floor(response["4"].price_change_percentage_24h * 100) / 100;
+      usdcMarketCap.innerHTML = response["4"].market_cap.toLocaleString();
+
+      var usdc24HPriceChange1 = Math.floor(response["4"].price_change_percentage_24h * 100) / 100;
+      let percentageusdc = $('#usdc-24h-change');
+      if (usdc24HPriceChange1 < 0) {
+        document.getElementById("usdc-24h-change").style.color = "#ff0000";
+        percentageusdc.text(percentageusdc.text() + '%');
+      }
+      else if (usdc24HPriceChange1 >= 0) {
+        document.getElementById("usdc-24h-change").style.color = "rgb(9, 255, 0)";
+        percentageusdc.text(percentageusdc.text() + '%');
+      }
+
+      xrpMarketCapRank.innerHTML = response["5"].market_cap_rank;
+      xrpName.innerHTML = response["5"].name;
+      xrpSymbol.innerHTML = response["5"].symbol;
+      xrpImage.setAttribute('src', response["5"].image);
+      xrpPrice.innerHTML = response["5"].current_price.toLocaleString();
+      xrp24HPriceChange.innerHTML = Math.floor(response["5"].price_change_percentage_24h * 100) / 100;
+      xrpMarketCap.innerHTML = response["5"].market_cap.toLocaleString();
+
+      var xrp24HPriceChange1 = Math.floor(response["5"].price_change_percentage_24h * 100) / 100;
+      let percentagexrp = $('#xrp-24h-change');
+      if (xrp24HPriceChange1 < 0) {
+        document.getElementById("xrp-24h-change").style.color = "#ff0000";
+        percentagexrp.text(percentagexrp.text() + '%');
+      }
+      else if (xrp24HPriceChange1 >= 0) {
+        document.getElementById("xrp-24h-change").style.color = "rgb(9, 255, 0)";
+        percentagexrp.text(percentagexrp.text() + '%');
+      }
+
+      adaMarketCapRank.innerHTML = response["6"].market_cap_rank;
+      adaName.innerHTML = response["6"].name;
+      adaSymbol.innerHTML = response["6"].symbol;
+      adaImage.setAttribute('src', response["6"].image);
+      adaPrice.innerHTML = response["6"].current_price.toLocaleString();
+      ada24HPriceChange.innerHTML = Math.floor(response["6"].price_change_percentage_24h * 100) / 100;
+      adaMarketCap.innerHTML = response["6"].market_cap.toLocaleString();
+
+      var ada24HPriceChange1 = Math.floor(response["6"].price_change_percentage_24h * 100) / 100;
+      let percentageada = $('#cardano-24h-change');
+      if (ada24HPriceChange1 < 0) {
+        document.getElementById("cardano-24h-change").style.color = "#ff0000";
+        percentageada.text(percentageada.text() + '%');
+      }
+      else if (ada24HPriceChange1 >= 0) {
+        document.getElementById("cardano-24h-change").style.color = "rgb(9, 255, 0)";
+        percentageada.text(percentageada.text() + '%');
+      }
+
+      solMarketCapRank.innerHTML = response["7"].market_cap_rank;
+      solName.innerHTML = response["7"].name;
+      solSymbol.innerHTML = response["7"].symbol;
+      solImage.setAttribute('src', response["7"].image);
+      solPrice.innerHTML = response["7"].current_price.toLocaleString();
+      sol24HPriceChange.innerHTML = Math.floor(response["7"].price_change_percentage_24h * 100) / 100;
+      solMarketCap.innerHTML = response["7"].market_cap.toLocaleString();
+
+      var sol24HPriceChange1 = Math.floor(response["7"].price_change_percentage_24h * 100) / 100;
+      let percentagesol = $('#solana-24h-change');
+      if (sol24HPriceChange1 < 0) {
+        document.getElementById("solana-24h-change").style.color = "#ff0000";
+        percentagesol.text(percentagesol.text() + '%');
+      }
+      else if (sol24HPriceChange1 >= 0) {
+        document.getElementById("solana-24h-change").style.color = "rgb(9, 255, 0)";
+        percentagesol.text(percentagesol.text() + '%');
+      }
+
+      lunaMarketCapRank.innerHTML = response["8"].market_cap_rank;
+      lunaName.innerHTML = response["8"].name;
+      lunaSymbol.innerHTML = response["8"].symbol;
+      lunaImage.setAttribute('src', response["8"].image);
+      lunaPrice.innerHTML = response["8"].current_price.toLocaleString();
+      luna24HPriceChange.innerHTML = Math.floor(response["8"].price_change_percentage_24h * 100) / 100;
+      lunaMarketCap.innerHTML = response["8"].market_cap.toLocaleString();
+
+      var luna24HPriceChange1 = Math.floor(response["8"].price_change_percentage_24h * 100) / 100;
+      let percentageluna = $('#terra-24h-change');
+      if (luna24HPriceChange1 < 0) {
+        document.getElementById("terra-24h-change").style.color = "#ff0000";
+        percentageluna.text(percentageluna.text() + '%');
+      }
+      else if (luna24HPriceChange1 >= 0) {
+        document.getElementById("terra-24h-change").style.color = "rgb(9, 255, 0)";
+        percentageluna.text(percentageluna.text() + '%');
+      }
+
+      avaxMarketCapRank.innerHTML = response["9"].market_cap_rank;
+      avaxName.innerHTML = response["9"].name;
+      avaxSymbol.innerHTML = response["9"].symbol;
+      avaxImage.setAttribute('src', response["9"].image);
+      avaxPrice.innerHTML = response["9"].current_price.toLocaleString();
+      avax24HPriceChange.innerHTML = Math.floor(response["9"].price_change_percentage_24h * 100) / 100;
+      avaxMarketCap.innerHTML = response["9"].market_cap.toLocaleString();
+
+      var avax24HPriceChange1 = Math.floor(response["8"].price_change_percentage_24h * 100) / 100;
+      let percentageavax = $('#avalanche-24h-change');
+      if (avax24HPriceChange1 < 0) {
+        document.getElementById("avalanche-24h-change").style.color = "#ff0000";
+        percentageavax.text(percentageavax.text() + '%');
+      }
+      else if (avax24HPriceChange1 >= 0) {
+        document.getElementById("avalanche-24h-change").style.color = "rgb(9, 255, 0)";
+        percentageavax.text(percentageavax.text() + '%');
+      }
+
+    });
+
+  </script>
+
+
+</body>
+
+</html>
