@@ -12,198 +12,94 @@
   <meta name="generator" content="Website powered by Sandipnath.com" />
   <meta property="og:title" content="Cryptocurrency Dashboard" />
   <meta property="og:description" content="Cryptocurrency Dashboard" />
-  <meta property="og:image" content="https://sandipnath.com/cryptocurrency-dashboard/images/cryptocurrency-dashboard1.png" />
-  <title>Cryptocurrency Dashboard</title>
+  <meta property="og:image"
+    content="https://sandipnath.com/cryptocurrency-dashboard/images/cryptocurrency-dashboard1.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+  <link rel="manifest" href="images/favicon//site.webmanifest">
+  <link rel="mask-icon" href="images/favicon//safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#ffffff">
+  <title>Cryptocurrency Dashboard | Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-      text-shadow: 1px 2px 4px rgb(0 0 0 / 80%);
-
-    }
-
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-      background: rgb(25, 27, 31);
-    }
-
-    table td:second-child {
-      font-weight: bold;
-    }
-
-    table span {
-      vertical-align: middle;
-    }
-
-    table img {
-      width: 30px;
-      margin-right: 8px;
-    }
-
-    .table>tbody {
-      line-height: 60px;
-    }
-
-    table {
-      white-space: nowrap;
-    }
-
-    .table>thead {
-      background: #24272f;
-      line-height: 40px;
-    }
-
-    tr:hover {
-      background: #24272f;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 30px 0 50px 0;
-      color: rgb(9, 255, 0);
-      font-weight: bold;
-    }
-
-    #bitcoin-symbol,
-    #ethereum-symbol,
-    #tether-symbol,
-    #bnb-symbol,
-    #usdc-symbol,
-    #xrp-symbol,
-    #cardano-symbol,
-    #solana-symbol,
-    #terra-symbol,
-    #avalanche-symbol {
-      text-transform: uppercase;
-      margin: 0px 0px 0px 6px;
-      color: rgb(255, 255, 255);
-    }
-
-    .container {
-      background: rgb(31, 33, 40);
-      -webkit-box-shadow: 0px 0px 22px 5px RGB(9, 255, 0, 0.8);
-      box-shadow: 0px 0px 16px 5px RGB(9, 255, 0, 0.8);
-      border-radius: 30px;
-      color: #fff !important;
-      padding: 30px;
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 30px;
-    }
-
-    @media screen and (max-width: 949px) {
-      .container {
-        padding: 30px 0;
-        width: 90%;
-      }
-
-      .table-responsive {
-        overflow-y: hidden;
-        overflow-x: auto;
-      }
-
-      table tr {
-        width: 100%;
-      }
-
-      .sticky-col {
-        position: -webkit-sticky;
-        position: sticky;
-        left: 0;
-        background: rgb(31, 33, 40) !important;
-      }
-
-      .sticky-col-header {
-        position: -webkit-sticky;
-        position: sticky;
-        left: 0;
-        background: #24272f !important;
-      }
-
-    }
-    * {
-      scrollbar-width: thin;
-      scrollbar-color: rgb(9, 255, 0) rgba(202, 202, 202, 0.314);
-    }
-    *::-webkit-scrollbar {
-      background-color: transparent;
-      width: 11px
-    }
-
-    *::-webkit-scrollbar-track {
-      background: rgba(9, 255, 0, .3137254901960784);
-      box-shadow: inset 0 0 2px#585858
-    }
-
-    *::-webkit-scrollbar-thumb {
-      background: rgb(9, 255, 0);
-      border-radius: 20px
-    }
-
-    footer {
-      margin-top: 5px;
-      text-align: center;
-    }
-  </style>
+  <script>
+    window.onload = function () {
+      (document.getElementsByTagName('th')[1]).click();
+    };
+  </script>
 </head>
 
 <body>
-
   <div class="container">
-
+    <nav class="menu-container">
+      <input type="checkbox" aria-label="Toggle menu" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <a href="index.html" class="menu-logo">
+        <img src="images/logo.png" alt="Cryptocurrency Dashboard" title="Cryptocurrency Dashboard" />
+      </a>
+      <div class="menu">
+        <ul>
+        </ul>
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="news.html" title="News">News</a></li>
+          <li><a href="watchlist.html" title="Watchlist">Watchlist</a></li>
+        </ul>
+      </div>
+    </nav>
     <h1>Cryptocurrency Dashboard</h1>
     <div class="table-responsive" style="color: #fff;">
-      <table class="table" style="color: #fff;" id="tab">
+      <table class="table sortable" style="color: #fff;" id="tab">
         <thead>
           <tr>
             <th class="sticky-col-header">#</th>
             <th class="sticky-col-header">Coin</th>
-            <th>Price</th>
-            <th>24h Change</th>
-            <th>Market Cap</th>
+            <th class="sorttable_nosort"></th>
+            <th class="sorttable_nosort">Price</th>
+            <th class="sorttable_nosort">24h Change</th>
+            <th class="sorttable_nosort">Market Cap</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td class="sticky-col"><span id="bitcoin-market-cap-rank"></span></td>
-            <td class="sticky-col"><img src="" id="bitcoin-image" alt=""><span id="bitcoin-name"></span><span
-                id="bitcoin-symbol"> </span></td>
-            <td>$<span id="bitcoin-price"></span></td>
-            <td><span id="bitcoin-24h-change"></span></td>
-            <td>$<span id="bitcoin-market-cap"></span></td>
+            <td class="sticky-col"><span id="btc-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="btc-image" alt=""><span id="btc-name"></span><span id="btc-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="btc-price"></span></td>
+            <td><span id="btc-24h-change"></span></td>
+            <td>$<span id="btc-market-cap"></span></td>
           </tr>
           <tr>
-            <td class="sticky-col"><span id="ethereum-market-cap-rank"></span></td>
-            <td class="sticky-col"><img src="" id="ethereum-image" alt=""><span id="ethereum-name"></span><span
-                id="ethereum-symbol"> </span></td>
-            <td>$<span id="ethereum-price"></span></td>
-            <td><span id="ethereum-24h-change"></span></td>
-            <td>$<span id="ethereum-market-cap"></span></td>
+            <td class="sticky-col"><span id="eth-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="eth-image" alt=""><span id="eth-name"></span><span id="eth-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="eth-price"></span></td>
+            <td><span id="eth-24h-change"></span></td>
+            <td>$<span id="eth-market-cap"></span></td>
           </tr>
-
           <tr>
-            <td class="sticky-col"><span id="tether-market-cap-rank"></span></td>
-            <td class="sticky-col"><img src="" id="tether-image" alt=""><span id="tether-name"></span><span
-                id="tether-symbol"> </span></td>
-            <td>$<span id="tether-price"></span></td>
-            <td><span id="tether-24h-change"></span></td>
-            <td>$<span id="tether-market-cap"></span></td>
+            <td class="sticky-col"><span id="usdt-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="usdt-image" alt=""><span id="usdt-name"></span><span
+                id="usdt-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="usdt-price"></span></td>
+            <td><span id="usdt-24h-change"></span></td>
+            <td>$<span id="usdt-market-cap"></span></td>
           </tr>
           <tr>
             <td class="sticky-col"><span id="bnb-market-cap-rank"></span></td>
             <td class="sticky-col"><img src="" id="bnb-image" alt=""><span id="bnb-name"></span><span id="bnb-symbol">
               </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
             <td>$<span id="bnb-price"></span></td>
             <td><span id="bnb-24h-change"></span></td>
             <td>$<span id="bnb-market-cap"></span></td>
@@ -212,6 +108,7 @@
             <td class="sticky-col"><span id="usdc-market-cap-rank"></span></td>
             <td class="sticky-col"><img src="" id="usdc-image" alt=""><span id="usdc-name"></span><span
                 id="usdc-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
             <td>$<span id="usdc-price"></span></td>
             <td><span id="usdc-24h-change"></span></td>
             <td>$<span id="usdc-market-cap"></span></td>
@@ -220,75 +117,625 @@
             <td class="sticky-col"><span id="xrp-market-cap-rank"></span></td>
             <td class="sticky-col"><img src="" id="xrp-image" alt=""><span id="xrp-name"></span><span id="xrp-symbol">
               </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
             <td>$<span id="xrp-price"></span></td>
             <td><span id="xrp-24h-change"></span></td>
             <td>$<span id="xrp-market-cap"></span></td>
           </tr>
           <tr>
-            <td class="sticky-col"><span id="cardano-market-cap-rank"></span></td>
-            <td class="sticky-col"><img src="" id="cardano-image" alt=""><span id="cardano-name"></span><span
-                id="cardano-symbol"> </span></td>
-            <td>$<span id="cardano-price"></span></td>
-            <td><span id="cardano-24h-change"></span></td>
-            <td>$<span id="cardano-market-cap"></span></td>
+            <td class="sticky-col"><span id="sol-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="sol-image" alt=""><span id="sol-name"></span><span id="sol-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="sol-price"></span></td>
+            <td><span id="sol-24h-change"></span></td>
+            <td>$<span id="sol-market-cap"></span></td>
           </tr>
           <tr>
-            <td class="sticky-col"><span id="solana-market-cap-rank"></span></td>
-            <td class="sticky-col"><img src="" id="solana-image" alt=""><span id="solana-name"></span><span
-                id="solana-symbol"> </span></td>
-            <td>$<span id="solana-price"></span></td>
-            <td><span id="solana-24h-change"></span></td>
-            <td>$<span id="solana-market-cap"></span></td>
+            <td class="sticky-col"><span id="luna-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="luna-image" alt=""><span id="luna-name"></span><span
+                id="luna-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="luna-price"></span></td>
+            <td><span id="luna-24h-change"></span></td>
+            <td>$<span id="luna-market-cap"></span></td>
           </tr>
           <tr>
-            <td class="sticky-col"><span id="terra-market-cap-rank"></span></td>
-            <td class="sticky-col"><img src="" id="terra-image" alt=""><span id="terra-name"></span><span
-                id="terra-symbol"> </span></td>
-            <td>$<span id="terra-price"></span></td>
-            <td><span id="terra-24h-change"></span></td>
-            <td>$<span id="terra-market-cap"></span></td>
+            <td class="sticky-col"><span id="ada-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="ada-image" alt=""><span id="ada-name"></span><span id="ada-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="ada-price"></span></td>
+            <td><span id="ada-24h-change"></span></td>
+            <td>$<span id="ada-market-cap"></span></td>
           </tr>
           <tr>
-            <td class="sticky-col"><span id="avalanche-market-cap-rank"></span></td>
-            <td class="sticky-col"><img src="" id="avalanche-image" alt=""><span id="avalanche-name"></span><span
-                id="avalanche-symbol"> </span></td>
-            <td>$<span id="avalanche-price"></span></td>
-            <td><span id="avalanche-24h-change"></span></td>
-            <td>$<span id="avalanche-market-cap"></span></td>
+            <td class="sticky-col"><span id="avax-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="avax-image" alt=""><span id="avax-name"></span><span
+                id="avax-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="avax-price"></span></td>
+            <td><span id="avax-24h-change"></span></td>
+            <td>$<span id="avax-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="dot-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="dot-image" alt=""><span id="dot-name"></span><span id="dot-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="dot-price"></span></td>
+            <td><span id="dot-24h-change"></span></td>
+            <td>$<span id="dot-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="doge-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="doge-image" alt=""><span id="doge-name"></span><span
+                id="doge-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="doge-price"></span></td>
+            <td><span id="doge-24h-change"></span></td>
+            <td>$<span id="doge-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="busd-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="busd-image" alt=""><span id="busd-name"></span><span
+                id="busd-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="busd-price"></span></td>
+            <td><span id="busd-24h-change"></span></td>
+            <td>$<span id="busd-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="ust-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="ust-image" alt=""><span id="ust-name"></span><span id="ust-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="ust-price"></span></td>
+            <td><span id="ust-24h-change"></span></td>
+            <td>$<span id="ust-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="shib-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="shib-image" alt=""><span id="shib-name"></span><span
+                id="shib-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="shib-price"></span></td>
+            <td><span id="shib-24h-change"></span></td>
+            <td>$<span id="shib-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="wbtc-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="wbtc-image" alt=""><span id="wbtc-name"></span><span
+                id="wbtc-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="wbtc-price"></span></td>
+            <td><span id="wbtc-24h-change"></span></td>
+            <td>$<span id="wbtc-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="cro-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="cro-image" alt=""><span id="cro-name"></span><span id="cro-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="cro-price"></span></td>
+            <td><span id="cro-24h-change"></span></td>
+            <td>$<span id="cro-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="near-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="near-image" alt=""><span id="near-name"></span><span
+                id="near-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="near-price"></span></td>
+            <td><span id="near-24h-change"></span></td>
+            <td>$<span id="near-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="steth-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="steth-image" alt=""><span id="steth-name"></span><span
+                id="steth-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="steth-price"></span></td>
+            <td><span id="steth-24h-change"></span></td>
+            <td>$<span id="steth-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="matic-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="matic-image" alt=""><span id="matic-name"></span><span
+                id="matic-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="matic-price"></span></td>
+            <td><span id="matic-24h-change"></span></td>
+            <td>$<span id="matic-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="dai-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="dai-image" alt=""><span id="dai-name"></span><span id="dai-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="dai-price"></span></td>
+            <td><span id="dai-24h-change"></span></td>
+            <td>$<span id="dai-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="atom-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="atom-image" alt=""><span id="atom-name"></span><span
+                id="atom-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="atom-price"></span></td>
+            <td><span id="atom-24h-change"></span></td>
+            <td>$<span id="atom-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="ltc-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="ltc-image" alt=""><span id="ltc-name"></span><span id="ltc-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="ltc-price"></span></td>
+            <td><span id="ltc-24h-change"></span></td>
+            <td>$<span id="ltc-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="link-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="link-image" alt=""><span id="link-name"></span><span
+                id="link-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="link-price"></span></td>
+            <td><span id="link-24h-change"></span></td>
+            <td>$<span id="link-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="trx-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="trx-image" alt=""><span id="trx-name"></span><span id="trx-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="trx-price"></span></td>
+            <td><span id="trx-24h-change"></span></td>
+            <td>$<span id="trx-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="ftt-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="ftt-image" alt=""><span id="ftt-name"></span><span id="ftt-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="ftt-price"></span></td>
+            <td><span id="ftt-24h-change"></span></td>
+            <td>$<span id="ftt-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="bch-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="bch-image" alt=""><span id="bch-name"></span><span id="bch-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="bch-price"></span></td>
+            <td><span id="bch-24h-change"></span></td>
+            <td>$<span id="bch-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="leo-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="leo-image" alt=""><span id="leo-name"></span><span id="leo-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="leo-price"></span></td>
+            <td><span id="leo-24h-change"></span></td>
+            <td>$<span id="leo-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="etc-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="etc-image" alt=""><span id="etc-name"></span><span id="etc-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="etc-price"></span></td>
+            <td><span id="etc-24h-change"></span></td>
+            <td>$<span id="etc-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="algo-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="algo-image" alt=""><span id="algo-name"></span><span
+                id="algo-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="algo-price"></span></td>
+            <td><span id="algo-24h-change"></span></td>
+            <td>$<span id="algo-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="xlm-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="xlm-image" alt=""><span id="xlm-name"></span><span id="xlm-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="xlm-price"></span></td>
+            <td><span id="xlm-24h-change"></span></td>
+            <td>$<span id="xlm-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="okb-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="okb-image" alt=""><span id="okb-name"></span><span id="okb-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="okb-price"></span></td>
+            <td><span id="okb-24h-change"></span></td>
+            <td>$<span id="okb-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="uni-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="uni-image" alt=""><span id="uni-name"></span><span id="uni-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="uni-price"></span></td>
+            <td><span id="uni-24h-change"></span></td>
+            <td>$<span id="uni-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="vet-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="vet-image" alt=""><span id="vet-name"></span><span id="vet-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="vet-price"></span></td>
+            <td><span id="vet-24h-change"></span></td>
+            <td>$<span id="vet-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="hbar-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="hbar-image" alt=""><span id="hbar-name"></span><span
+                id="hbar-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="hbar-price"></span></td>
+            <td><span id="hbar-24h-change"></span></td>
+            <td>$<span id="hbar-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="xmr-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="xmr-image" alt=""><span id="xmr-name"></span><span id="xmr-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="xmr-price"></span></td>
+            <td><span id="xmr-24h-change"></span></td>
+            <td>$<span id="xmr-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="fil-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="fil-image" alt=""><span id="fil-name"></span><span id="fil-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="fil-price"></span></td>
+            <td><span id="fil-24h-change"></span></td>
+            <td>$<span id="fil-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="icp-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="icp-image" alt=""><span id="icp-name"></span><span id="icp-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="icp-price"></span></td>
+            <td><span id="icp-24h-change"></span></td>
+            <td>$<span id="icp-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="axs-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="axs-image" alt=""><span id="axs-name"></span><span id="axs-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="axs-price"></span></td>
+            <td><span id="axs-24h-change"></span></td>
+            <td>$<span id="axs-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="egld-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="egld-image" alt=""><span id="egld-name"></span><span
+                id="egld-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="egld-price"></span></td>
+            <td><span id="egld-24h-change"></span></td>
+            <td>$<span id="egld-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="mana-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="mana-image" alt=""><span id="mana-name"></span><span
+                id="mana-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="mana-price"></span></td>
+            <td><span id="mana-24h-change"></span></td>
+            <td>$<span id="mana-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="theta-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="theta-image" alt=""><span id="theta-name"></span><span
+                id="theta-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="theta-price"></span></td>
+            <td><span id="theta-24h-change"></span></td>
+            <td>$<span id="theta-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="sand-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="sand-image" alt=""><span id="sand-name"></span><span
+                id="sand-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="sand-price"></span></td>
+            <td><span id="sand-24h-change"></span></td>
+            <td>$<span id="sand-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="ceth-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="ceth-image" alt=""><span id="ceth-name"></span><span
+                id="ceth-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="ceth-price"></span></td>
+            <td><span id="ceth-24h-change"></span></td>
+            <td>$<span id="ceth-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="ftm-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="ftm-image" alt=""><span id="ftm-name"></span><span id="ftm-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="ftm-price"></span></td>
+            <td><span id="ftm-24h-change"></span></td>
+            <td>$<span id="ftm-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="ape-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="ape-image" alt=""><span id="ape-name"></span><span id="ape-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="ape-price"></span></td>
+            <td><span id="ape-24h-change"></span></td>
+            <td>$<span id="ape-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="klay-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="klay-image" alt=""><span id="klay-name"></span><span
+                id="klay-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="klay-price"></span></td>
+            <td><span id="klay-24h-change"></span></td>
+            <td>$<span id="klay-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="xtz-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="xtz-image" alt=""><span id="xtz-name"></span><span id="xtz-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="xtz-price"></span></td>
+            <td><span id="xtz-24h-change"></span></td>
+            <td>$<span id="xtz-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="mim-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="mim-image" alt=""><span id="mim-name"></span><span id="mim-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="mim-price"></span></td>
+            <td><span id="mim-24h-change"></span></td>
+            <td>$<span id="mim-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="rune-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="rune-image" alt=""><span id="rune-name"></span><span
+                id="rune-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="rune-price"></span></td>
+            <td><span id="rune-24h-change"></span></td>
+            <td>$<span id="rune-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="frax-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="frax-image" alt=""><span id="frax-name"></span><span
+                id="frax-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="frax-price"></span></td>
+            <td><span id="frax-24h-change"></span></td>
+            <td>$<span id="frax-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="grt-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="grt-image" alt=""><span id="grt-name"></span><span id="grt-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="grt-price"></span></td>
+            <td><span id="grt-24h-change"></span></td>
+            <td>$<span id="grt-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="waves-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="waves-image" alt=""><span id="waves-name"></span><span
+                id="waves-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="waves-price"></span></td>
+            <td><span id="waves-24h-change"></span></td>
+            <td>$<span id="waves-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="cake-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="cake-image" alt=""><span id="cake-name"></span><span
+                id="cake-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="cake-price"></span></td>
+            <td><span id="cake-24h-change"></span></td>
+            <td>$<span id="cake-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="aave-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="aave-image" alt=""><span id="aave-name"></span><span
+                id="aave-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="aave-price"></span></td>
+            <td><span id="aave-24h-change"></span></td>
+            <td>$<span id="aave-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="eos-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="eos-image" alt=""><span id="eos-name"></span><span id="eos-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="eos-price"></span></td>
+            <td><span id="eos-24h-change"></span></td>
+            <td>$<span id="eos-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="osmo-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="osmo-image" alt=""><span id="osmo-name"></span><span
+                id="osmo-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="osmo-price"></span></td>
+            <td><span id="osmo-24h-change"></span></td>
+            <td>$<span id="osmo-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="dfi-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="dfi-image" alt=""><span id="dfi-name"></span><span id="dfi-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="dfi-price"></span></td>
+            <td><span id="dfi-24h-change"></span></td>
+            <td>$<span id="dfi-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="hnt-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="hnt-image" alt=""><span id="hnt-name"></span><span id="hnt-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="hnt-price"></span></td>
+            <td><span id="hnt-24h-change"></span></td>
+            <td>$<span id="hnt-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="flow-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="flow-image" alt=""><span id="flow-name"></span><span
+                id="flow-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="flow-price"></span></td>
+            <td><span id="flow-24h-change"></span></td>
+            <td>$<span id="flow-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="zec-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="zec-image" alt=""><span id="zec-name"></span><span id="zec-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="zec-price"></span></td>
+            <td><span id="zec-24h-change"></span></td>
+            <td>$<span id="zec-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="miota-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="miota-image" alt=""><span id="miota-name"></span><span
+                id="miota-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="miota-price"></span></td>
+            <td><span id="miota-24h-change"></span></td>
+            <td>$<span id="miota-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="cusdc-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="cusdc-image" alt=""><span id="cusdc-name"></span><span
+                id="cusdc-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="cusdc-price"></span></td>
+            <td><span id="cusdc-24h-change"></span></td>
+            <td>$<span id="cusdc-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="cvx-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="cvx-image" alt=""><span id="cvx-name"></span><span id="cvx-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="cvx-price"></span></td>
+            <td><span id="cvx-24h-change"></span></td>
+            <td>$<span id="cvx-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="xec-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="xec-image" alt=""><span id="xec-name"></span><span id="xec-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="xec-price"></span></td>
+            <td><span id="xec-24h-change"></span></td>
+            <td>$<span id="xec-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="tfuel-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="tfuel-image" alt=""><span id="tfuel-name"></span><span
+                id="tfuel-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="tfuel-price"></span></td>
+            <td><span id="tfuel-24h-change"></span></td>
+            <td>$<span id="tfuel-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="mkr-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="mkr-image" alt=""><span id="mkr-name"></span><span id="mkr-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="mkr-price"></span></td>
+            <td><span id="mkr-24h-change"></span></td>
+            <td>$<span id="mkr-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="btt-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="btt-image" alt=""><span id="btt-name"></span><span id="btt-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="btt-price"></span></td>
+            <td><span id="btt-24h-change"></span></td>
+            <td>$<span id="btt-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="fxs-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="fxs-image" alt=""><span id="fxs-name"></span><span id="fxs-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="fxs-price"></span></td>
+            <td><span id="fxs-24h-change"></span></td>
+            <td>$<span id="fxs-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="zil-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="zil-image" alt=""><span id="zil-name"></span><span id="zil-symbol">
+              </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="zil-price"></span></td>
+            <td><span id="zil-24h-change"></span></td>
+            <td>$<span id="zil-market-cap"></span></td>
+          </tr>
+          <tr>
+            <td class="sticky-col"><span id="hbtc-market-cap-rank"></span></td>
+            <td class="sticky-col"><img src="" id="hbtc-image" alt=""><span id="hbtc-name"></span><span
+                id="hbtc-symbol"> </span></td>
+            <td><a class="buy-btn" title="Buy">Buy</a></td>
+            <td>$<span id="hbtc-price"></span></td>
+            <td><span id="hbtc-24h-change"></span></td>
+            <td>$<span id="hbtc-market-cap"></span></td>
           </tr>
         </tbody>
       </table>
     </div>
-
   </div>
-
   <footer>&nbsp;</footer>
-
   <script>
+    var btcMarketCapRank = document.getElementById("btc-market-cap-rank");
+    var btcName = document.getElementById("btc-name");
+    var btcSymbol = document.getElementById("btc-symbol");
+    const btcImage = document.getElementById("btc-image");
+    var btcPrice = document.getElementById("btc-price");
+    var btc24HPriceChange = document.getElementById("btc-24h-change");
+    var btcMarketCap = document.getElementById("btc-market-cap");
 
-    var btcMarketCapRank = document.getElementById("bitcoin-market-cap-rank");
-    var btcName = document.getElementById("bitcoin-name");
-    var btcSymbol = document.getElementById("bitcoin-symbol");
-    const btcImage = document.getElementById("bitcoin-image");
-    var btcPrice = document.getElementById("bitcoin-price");
-    var btc24HPriceChange = document.getElementById("bitcoin-24h-change");
-    var btcMarketCap = document.getElementById("bitcoin-market-cap");
+    var ethMarketCapRank = document.getElementById("eth-market-cap-rank");
+    var ethName = document.getElementById("eth-name");
+    var ethSymbol = document.getElementById("eth-symbol");
+    const ethImage = document.getElementById("eth-image");
+    var ethPrice = document.getElementById("eth-price");
+    var eth24HPriceChange = document.getElementById("eth-24h-change");
+    var ethMarketCap = document.getElementById("eth-market-cap");
 
-    var ethMarketCapRank = document.getElementById("ethereum-market-cap-rank");
-    var ethName = document.getElementById("ethereum-name");
-    var ethSymbol = document.getElementById("ethereum-symbol");
-    const ethImage = document.getElementById("ethereum-image");
-    var ethPrice = document.getElementById("ethereum-price");
-    var eth24HPriceChange = document.getElementById("ethereum-24h-change");
-    var ethMarketCap = document.getElementById("ethereum-market-cap");
-
-    var usdtMarketCapRank = document.getElementById("tether-market-cap-rank");
-    var usdtName = document.getElementById("tether-name");
-    var usdtSymbol = document.getElementById("tether-symbol");
-    const usdtImage = document.getElementById("tether-image");
-    var usdtPrice = document.getElementById("tether-price");
-    var usdt24HPriceChange = document.getElementById("tether-24h-change");
-    var usdtMarketCap = document.getElementById("tether-market-cap");
+    var usdtMarketCapRank = document.getElementById("usdt-market-cap-rank");
+    var usdtName = document.getElementById("usdt-name");
+    var usdtSymbol = document.getElementById("usdt-symbol");
+    const usdtImage = document.getElementById("usdt-image");
+    var usdtPrice = document.getElementById("usdt-price");
+    var usdt24HPriceChange = document.getElementById("usdt-24h-change");
+    var usdtMarketCap = document.getElementById("usdt-market-cap");
 
     var bnbMarketCapRank = document.getElementById("bnb-market-cap-rank");
     var bnbName = document.getElementById("bnb-name");
@@ -314,241 +761,1958 @@
     var xrp24HPriceChange = document.getElementById("xrp-24h-change");
     var xrpMarketCap = document.getElementById("xrp-market-cap");
 
-    var adaMarketCapRank = document.getElementById("cardano-market-cap-rank");
-    var adaName = document.getElementById("cardano-name");
-    var adaSymbol = document.getElementById("cardano-symbol");
-    const adaImage = document.getElementById("cardano-image");
-    var adaPrice = document.getElementById("cardano-price");
-    var ada24HPriceChange = document.getElementById("cardano-24h-change");
-    var adaMarketCap = document.getElementById("cardano-market-cap");
+    var solMarketCapRank = document.getElementById("sol-market-cap-rank");
+    var solName = document.getElementById("sol-name");
+    var solSymbol = document.getElementById("sol-symbol");
+    const solImage = document.getElementById("sol-image");
+    var solPrice = document.getElementById("sol-price");
+    var sol24HPriceChange = document.getElementById("sol-24h-change");
+    var solMarketCap = document.getElementById("sol-market-cap");
 
-    var solMarketCapRank = document.getElementById("solana-market-cap-rank");
-    var solName = document.getElementById("solana-name");
-    var solSymbol = document.getElementById("solana-symbol");
-    const solImage = document.getElementById("solana-image");
-    var solPrice = document.getElementById("solana-price");
-    var sol24HPriceChange = document.getElementById("solana-24h-change");
-    var solMarketCap = document.getElementById("solana-market-cap");
+    var lunaMarketCapRank = document.getElementById("luna-market-cap-rank");
+    var lunaName = document.getElementById("luna-name");
+    var lunaSymbol = document.getElementById("luna-symbol");
+    const lunaImage = document.getElementById("luna-image");
+    var lunaPrice = document.getElementById("luna-price");
+    var luna24HPriceChange = document.getElementById("luna-24h-change");
+    var lunaMarketCap = document.getElementById("luna-market-cap");
 
-    var lunaMarketCapRank = document.getElementById("terra-market-cap-rank");
-    var lunaName = document.getElementById("terra-name");
-    var lunaSymbol = document.getElementById("terra-symbol");
-    const lunaImage = document.getElementById("terra-image");
-    var lunaPrice = document.getElementById("terra-price");
-    var luna24HPriceChange = document.getElementById("terra-24h-change");
-    var lunaMarketCap = document.getElementById("terra-market-cap");
+    var adaMarketCapRank = document.getElementById("ada-market-cap-rank");
+    var adaName = document.getElementById("ada-name");
+    var adaSymbol = document.getElementById("ada-symbol");
+    const adaImage = document.getElementById("ada-image");
+    var adaPrice = document.getElementById("ada-price");
+    var ada24HPriceChange = document.getElementById("ada-24h-change");
+    var adaMarketCap = document.getElementById("ada-market-cap");
 
-    var avaxMarketCapRank = document.getElementById("avalanche-market-cap-rank");
-    var avaxName = document.getElementById("avalanche-name");
-    var avaxSymbol = document.getElementById("avalanche-symbol");
-    const avaxImage = document.getElementById("avalanche-image");
-    var avaxPrice = document.getElementById("avalanche-price");
-    var avax24HPriceChange = document.getElementById("avalanche-24h-change");
-    var avaxMarketCap = document.getElementById("avalanche-market-cap");
+    var avaxMarketCapRank = document.getElementById("avax-market-cap-rank");
+    var avaxName = document.getElementById("avax-name");
+    var avaxSymbol = document.getElementById("avax-symbol");
+    const avaxImage = document.getElementById("avax-image");
+    var avaxPrice = document.getElementById("avax-price");
+    var avax24HPriceChange = document.getElementById("avax-24h-change");
+    var avaxMarketCap = document.getElementById("avax-market-cap");
 
-    var settings = {
-      "async": true,
-      "scrossDomain": true,
-      "url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&ids=bitcoin%2Cethereum%2Ctether%2Cbinancecoin%2Cusd-coin%2Cripple%2Ccardano%2Csolana%2Cterra-luna%2Cavalanche-2&order=market_cap_desc&per_page=100&page=1&sparkline=false",
-      "method": "GET",
-      "headers": {}
+    var dotMarketCapRank = document.getElementById("dot-market-cap-rank");
+    var dotName = document.getElementById("dot-name");
+    var dotSymbol = document.getElementById("dot-symbol");
+    const dotImage = document.getElementById("dot-image");
+    var dotPrice = document.getElementById("dot-price");
+    var dot24HPriceChange = document.getElementById("dot-24h-change");
+    var dotMarketCap = document.getElementById("dot-market-cap");
+
+    var dogeMarketCapRank = document.getElementById("doge-market-cap-rank");
+    var dogeName = document.getElementById("doge-name");
+    var dogeSymbol = document.getElementById("doge-symbol");
+    const dogeImage = document.getElementById("doge-image");
+    var dogePrice = document.getElementById("doge-price");
+    var doge24HPriceChange = document.getElementById("doge-24h-change");
+    var dogeMarketCap = document.getElementById("doge-market-cap");
+
+    var busdMarketCapRank = document.getElementById("busd-market-cap-rank");
+    var busdName = document.getElementById("busd-name");
+    var busdSymbol = document.getElementById("busd-symbol");
+    const busdImage = document.getElementById("busd-image");
+    var busdPrice = document.getElementById("busd-price");
+    var busd24HPriceChange = document.getElementById("busd-24h-change");
+    var busdMarketCap = document.getElementById("busd-market-cap");
+
+    var ustMarketCapRank = document.getElementById("ust-market-cap-rank");
+    var ustName = document.getElementById("ust-name");
+    var ustSymbol = document.getElementById("ust-symbol");
+    const ustImage = document.getElementById("ust-image");
+    var ustPrice = document.getElementById("ust-price");
+    var ust24HPriceChange = document.getElementById("ust-24h-change");
+    var ustMarketCap = document.getElementById("ust-market-cap");
+
+    var shibMarketCapRank = document.getElementById("shib-market-cap-rank");
+    var shibName = document.getElementById("shib-name");
+    var shibSymbol = document.getElementById("shib-symbol");
+    const shibImage = document.getElementById("shib-image");
+    var shibPrice = document.getElementById("shib-price");
+    var shib24HPriceChange = document.getElementById("shib-24h-change");
+    var shibMarketCap = document.getElementById("shib-market-cap");
+
+    var wbtcMarketCapRank = document.getElementById("wbtc-market-cap-rank");
+    var wbtcName = document.getElementById("wbtc-name");
+    var wbtcSymbol = document.getElementById("wbtc-symbol");
+    const wbtcImage = document.getElementById("wbtc-image");
+    var wbtcPrice = document.getElementById("wbtc-price");
+    var wbtc24HPriceChange = document.getElementById("wbtc-24h-change");
+    var wbtcMarketCap = document.getElementById("wbtc-market-cap");
+
+    var croMarketCapRank = document.getElementById("cro-market-cap-rank");
+    var croName = document.getElementById("cro-name");
+    var croSymbol = document.getElementById("cro-symbol");
+    const croImage = document.getElementById("cro-image");
+    var croPrice = document.getElementById("cro-price");
+    var cro24HPriceChange = document.getElementById("cro-24h-change");
+    var croMarketCap = document.getElementById("cro-market-cap");
+
+    var nearMarketCapRank = document.getElementById("near-market-cap-rank");
+    var nearName = document.getElementById("near-name");
+    var nearSymbol = document.getElementById("near-symbol");
+    const nearImage = document.getElementById("near-image");
+    var nearPrice = document.getElementById("near-price");
+    var near24HPriceChange = document.getElementById("near-24h-change");
+    var nearMarketCap = document.getElementById("near-market-cap");
+
+    var stethMarketCapRank = document.getElementById("steth-market-cap-rank");
+    var stethName = document.getElementById("steth-name");
+    var stethSymbol = document.getElementById("steth-symbol");
+    const stethImage = document.getElementById("steth-image");
+    var stethPrice = document.getElementById("steth-price");
+    var steth24HPriceChange = document.getElementById("steth-24h-change");
+    var stethMarketCap = document.getElementById("steth-market-cap");
+
+    var maticMarketCapRank = document.getElementById("matic-market-cap-rank");
+    var maticName = document.getElementById("matic-name");
+    var maticSymbol = document.getElementById("matic-symbol");
+    const maticImage = document.getElementById("matic-image");
+    var maticPrice = document.getElementById("matic-price");
+    var matic24HPriceChange = document.getElementById("matic-24h-change");
+    var maticMarketCap = document.getElementById("matic-market-cap");
+
+    var daiMarketCapRank = document.getElementById("dai-market-cap-rank");
+    var daiName = document.getElementById("dai-name");
+    var daiSymbol = document.getElementById("dai-symbol");
+    const daiImage = document.getElementById("dai-image");
+    var daiPrice = document.getElementById("dai-price");
+    var dai24HPriceChange = document.getElementById("dai-24h-change");
+    var daiMarketCap = document.getElementById("dai-market-cap");
+
+    var atomMarketCapRank = document.getElementById("atom-market-cap-rank");
+    var atomName = document.getElementById("atom-name");
+    var atomSymbol = document.getElementById("atom-symbol");
+    const atomImage = document.getElementById("atom-image");
+    var atomPrice = document.getElementById("atom-price");
+    var atom24HPriceChange = document.getElementById("atom-24h-change");
+    var atomMarketCap = document.getElementById("atom-market-cap");
+
+    var ltcMarketCapRank = document.getElementById("ltc-market-cap-rank");
+    var ltcName = document.getElementById("ltc-name");
+    var ltcSymbol = document.getElementById("ltc-symbol");
+    const ltcImage = document.getElementById("ltc-image");
+    var ltcPrice = document.getElementById("ltc-price");
+    var ltc24HPriceChange = document.getElementById("ltc-24h-change");
+    var ltcMarketCap = document.getElementById("ltc-market-cap");
+
+    var linkMarketCapRank = document.getElementById("link-market-cap-rank");
+    var linkName = document.getElementById("link-name");
+    var linkSymbol = document.getElementById("link-symbol");
+    const linkImage = document.getElementById("link-image");
+    var linkPrice = document.getElementById("link-price");
+    var link24HPriceChange = document.getElementById("link-24h-change");
+    var linkMarketCap = document.getElementById("link-market-cap");
+
+    var trxMarketCapRank = document.getElementById("trx-market-cap-rank");
+    var trxName = document.getElementById("trx-name");
+    var trxSymbol = document.getElementById("trx-symbol");
+    const trxImage = document.getElementById("trx-image");
+    var trxPrice = document.getElementById("trx-price");
+    var trx24HPriceChange = document.getElementById("trx-24h-change");
+    var trxMarketCap = document.getElementById("trx-market-cap");
+
+    var fttMarketCapRank = document.getElementById("ftt-market-cap-rank");
+    var fttName = document.getElementById("ftt-name");
+    var fttSymbol = document.getElementById("ftt-symbol");
+    const fttImage = document.getElementById("ftt-image");
+    var fttPrice = document.getElementById("ftt-price");
+    var ftt24HPriceChange = document.getElementById("ftt-24h-change");
+    var fttMarketCap = document.getElementById("ftt-market-cap");
+
+    var bchMarketCapRank = document.getElementById("bch-market-cap-rank");
+    var bchName = document.getElementById("bch-name");
+    var bchSymbol = document.getElementById("bch-symbol");
+    const bchImage = document.getElementById("bch-image");
+    var bchPrice = document.getElementById("bch-price");
+    var bch24HPriceChange = document.getElementById("bch-24h-change");
+    var bchMarketCap = document.getElementById("bch-market-cap");
+
+    var leoMarketCapRank = document.getElementById("leo-market-cap-rank");
+    var leoName = document.getElementById("leo-name");
+    var leoSymbol = document.getElementById("leo-symbol");
+    const leoImage = document.getElementById("leo-image");
+    var leoPrice = document.getElementById("leo-price");
+    var leo24HPriceChange = document.getElementById("leo-24h-change");
+    var leoMarketCap = document.getElementById("leo-market-cap");
+
+    var etcMarketCapRank = document.getElementById("etc-market-cap-rank");
+    var etcName = document.getElementById("etc-name");
+    var etcSymbol = document.getElementById("etc-symbol");
+    const etcImage = document.getElementById("etc-image");
+    var etcPrice = document.getElementById("etc-price");
+    var etc24HPriceChange = document.getElementById("etc-24h-change");
+    var etcMarketCap = document.getElementById("etc-market-cap");
+
+    var algoMarketCapRank = document.getElementById("algo-market-cap-rank");
+    var algoName = document.getElementById("algo-name");
+    var algoSymbol = document.getElementById("algo-symbol");
+    const algoImage = document.getElementById("algo-image");
+    var algoPrice = document.getElementById("algo-price");
+    var algo24HPriceChange = document.getElementById("algo-24h-change");
+    var algoMarketCap = document.getElementById("algo-market-cap");
+
+    var xlmMarketCapRank = document.getElementById("xlm-market-cap-rank");
+    var xlmName = document.getElementById("xlm-name");
+    var xlmSymbol = document.getElementById("xlm-symbol");
+    const xlmImage = document.getElementById("xlm-image");
+    var xlmPrice = document.getElementById("xlm-price");
+    var xlm24HPriceChange = document.getElementById("xlm-24h-change");
+    var xlmMarketCap = document.getElementById("xlm-market-cap");
+
+    var okbMarketCapRank = document.getElementById("okb-market-cap-rank");
+    var okbName = document.getElementById("okb-name");
+    var okbSymbol = document.getElementById("okb-symbol");
+    const okbImage = document.getElementById("okb-image");
+    var okbPrice = document.getElementById("okb-price");
+    var okb24HPriceChange = document.getElementById("okb-24h-change");
+    var okbMarketCap = document.getElementById("okb-market-cap");
+
+    var uniMarketCapRank = document.getElementById("uni-market-cap-rank");
+    var uniName = document.getElementById("uni-name");
+    var uniSymbol = document.getElementById("uni-symbol");
+    const uniImage = document.getElementById("uni-image");
+    var uniPrice = document.getElementById("uni-price");
+    var uni24HPriceChange = document.getElementById("uni-24h-change");
+    var uniMarketCap = document.getElementById("uni-market-cap");
+
+    var vetMarketCapRank = document.getElementById("vet-market-cap-rank");
+    var vetName = document.getElementById("vet-name");
+    var vetSymbol = document.getElementById("vet-symbol");
+    const vetImage = document.getElementById("vet-image");
+    var vetPrice = document.getElementById("vet-price");
+    var vet24HPriceChange = document.getElementById("vet-24h-change");
+    var vetMarketCap = document.getElementById("vet-market-cap");
+
+    var hbarMarketCapRank = document.getElementById("hbar-market-cap-rank");
+    var hbarName = document.getElementById("hbar-name");
+    var hbarSymbol = document.getElementById("hbar-symbol");
+    const hbarImage = document.getElementById("hbar-image");
+    var hbarPrice = document.getElementById("hbar-price");
+    var hbar24HPriceChange = document.getElementById("hbar-24h-change");
+    var hbarMarketCap = document.getElementById("hbar-market-cap");
+
+    var xmrMarketCapRank = document.getElementById("xmr-market-cap-rank");
+    var xmrName = document.getElementById("xmr-name");
+    var xmrSymbol = document.getElementById("xmr-symbol");
+    const xmrImage = document.getElementById("xmr-image");
+    var xmrPrice = document.getElementById("xmr-price");
+    var xmr24HPriceChange = document.getElementById("xmr-24h-change");
+    var xmrMarketCap = document.getElementById("xmr-market-cap");
+
+    var filMarketCapRank = document.getElementById("fil-market-cap-rank");
+    var filName = document.getElementById("fil-name");
+    var filSymbol = document.getElementById("fil-symbol");
+    const filImage = document.getElementById("fil-image");
+    var filPrice = document.getElementById("fil-price");
+    var fil24HPriceChange = document.getElementById("fil-24h-change");
+    var filMarketCap = document.getElementById("fil-market-cap");
+
+    var icpMarketCapRank = document.getElementById("icp-market-cap-rank");
+    var icpName = document.getElementById("icp-name");
+    var icpSymbol = document.getElementById("icp-symbol");
+    const icpImage = document.getElementById("icp-image");
+    var icpPrice = document.getElementById("icp-price");
+    var icp24HPriceChange = document.getElementById("icp-24h-change");
+    var icpMarketCap = document.getElementById("icp-market-cap");
+
+    var axsMarketCapRank = document.getElementById("axs-market-cap-rank");
+    var axsName = document.getElementById("axs-name");
+    var axsSymbol = document.getElementById("axs-symbol");
+    const axsImage = document.getElementById("axs-image");
+    var axsPrice = document.getElementById("axs-price");
+    var axs24HPriceChange = document.getElementById("axs-24h-change");
+    var axsMarketCap = document.getElementById("axs-market-cap");
+
+    var egldMarketCapRank = document.getElementById("egld-market-cap-rank");
+    var egldName = document.getElementById("egld-name");
+    var egldSymbol = document.getElementById("egld-symbol");
+    const egldImage = document.getElementById("egld-image");
+    var egldPrice = document.getElementById("egld-price");
+    var egld24HPriceChange = document.getElementById("egld-24h-change");
+    var egldMarketCap = document.getElementById("egld-market-cap");
+
+    var manaMarketCapRank = document.getElementById("mana-market-cap-rank");
+    var manaName = document.getElementById("mana-name");
+    var manaSymbol = document.getElementById("mana-symbol");
+    const manaImage = document.getElementById("mana-image");
+    var manaPrice = document.getElementById("mana-price");
+    var mana24HPriceChange = document.getElementById("mana-24h-change");
+    var manaMarketCap = document.getElementById("mana-market-cap");
+
+    var thetaMarketCapRank = document.getElementById("theta-market-cap-rank");
+    var thetaName = document.getElementById("theta-name");
+    var thetaSymbol = document.getElementById("theta-symbol");
+    const thetaImage = document.getElementById("theta-image");
+    var thetaPrice = document.getElementById("theta-price");
+    var theta24HPriceChange = document.getElementById("theta-24h-change");
+    var thetaMarketCap = document.getElementById("theta-market-cap");
+
+    var sandMarketCapRank = document.getElementById("sand-market-cap-rank");
+    var sandName = document.getElementById("sand-name");
+    var sandSymbol = document.getElementById("sand-symbol");
+    const sandImage = document.getElementById("sand-image");
+    var sandPrice = document.getElementById("sand-price");
+    var sand24HPriceChange = document.getElementById("sand-24h-change");
+    var sandMarketCap = document.getElementById("sand-market-cap");
+
+    var cethMarketCapRank = document.getElementById("ceth-market-cap-rank");
+    var cethName = document.getElementById("ceth-name");
+    var cethSymbol = document.getElementById("ceth-symbol");
+    const cethImage = document.getElementById("ceth-image");
+    var cethPrice = document.getElementById("ceth-price");
+    var ceth24HPriceChange = document.getElementById("ceth-24h-change");
+    var cethMarketCap = document.getElementById("ceth-market-cap");
+
+    var ftmMarketCapRank = document.getElementById("ftm-market-cap-rank");
+    var ftmName = document.getElementById("ftm-name");
+    var ftmSymbol = document.getElementById("ftm-symbol");
+    const ftmImage = document.getElementById("ftm-image");
+    var ftmPrice = document.getElementById("ftm-price");
+    var ftm24HPriceChange = document.getElementById("ftm-24h-change");
+    var ftmMarketCap = document.getElementById("ftm-market-cap");
+
+    var apeMarketCapRank = document.getElementById("ape-market-cap-rank");
+    var apeName = document.getElementById("ape-name");
+    var apeSymbol = document.getElementById("ape-symbol");
+    const apeImage = document.getElementById("ape-image");
+    var apePrice = document.getElementById("ape-price");
+    var ape24HPriceChange = document.getElementById("ape-24h-change");
+    var apeMarketCap = document.getElementById("ape-market-cap");
+
+    var klayMarketCapRank = document.getElementById("klay-market-cap-rank");
+    var klayName = document.getElementById("klay-name");
+    var klaySymbol = document.getElementById("klay-symbol");
+    const klayImage = document.getElementById("klay-image");
+    var klayPrice = document.getElementById("klay-price");
+    var klay24HPriceChange = document.getElementById("klay-24h-change");
+    var klayMarketCap = document.getElementById("klay-market-cap");
+
+    var xtzMarketCapRank = document.getElementById("xtz-market-cap-rank");
+    var xtzName = document.getElementById("xtz-name");
+    var xtzSymbol = document.getElementById("xtz-symbol");
+    const xtzImage = document.getElementById("xtz-image");
+    var xtzPrice = document.getElementById("xtz-price");
+    var xtz24HPriceChange = document.getElementById("xtz-24h-change");
+    var xtzMarketCap = document.getElementById("xtz-market-cap");
+
+    var mimMarketCapRank = document.getElementById("mim-market-cap-rank");
+    var mimName = document.getElementById("mim-name");
+    var mimSymbol = document.getElementById("mim-symbol");
+    const mimImage = document.getElementById("mim-image");
+    var mimPrice = document.getElementById("mim-price");
+    var mim24HPriceChange = document.getElementById("mim-24h-change");
+    var mimMarketCap = document.getElementById("mim-market-cap");
+
+    var runeMarketCapRank = document.getElementById("rune-market-cap-rank");
+    var runeName = document.getElementById("rune-name");
+    var runeSymbol = document.getElementById("rune-symbol");
+    const runeImage = document.getElementById("rune-image");
+    var runePrice = document.getElementById("rune-price");
+    var rune24HPriceChange = document.getElementById("rune-24h-change");
+    var runeMarketCap = document.getElementById("rune-market-cap");
+
+    var fraxMarketCapRank = document.getElementById("frax-market-cap-rank");
+    var fraxName = document.getElementById("frax-name");
+    var fraxSymbol = document.getElementById("frax-symbol");
+    const fraxImage = document.getElementById("frax-image");
+    var fraxPrice = document.getElementById("frax-price");
+    var frax24HPriceChange = document.getElementById("frax-24h-change");
+    var fraxMarketCap = document.getElementById("frax-market-cap");
+
+    var grtMarketCapRank = document.getElementById("grt-market-cap-rank");
+    var grtName = document.getElementById("grt-name");
+    var grtSymbol = document.getElementById("grt-symbol");
+    const grtImage = document.getElementById("grt-image");
+    var grtPrice = document.getElementById("grt-price");
+    var grt24HPriceChange = document.getElementById("grt-24h-change");
+    var grtMarketCap = document.getElementById("grt-market-cap");
+
+    var wavesMarketCapRank = document.getElementById("waves-market-cap-rank");
+    var wavesName = document.getElementById("waves-name");
+    var wavesSymbol = document.getElementById("waves-symbol");
+    const wavesImage = document.getElementById("waves-image");
+    var wavesPrice = document.getElementById("waves-price");
+    var waves24HPriceChange = document.getElementById("waves-24h-change");
+    var wavesMarketCap = document.getElementById("waves-market-cap");
+
+    var cakeMarketCapRank = document.getElementById("cake-market-cap-rank");
+    var cakeName = document.getElementById("cake-name");
+    var cakeSymbol = document.getElementById("cake-symbol");
+    const cakeImage = document.getElementById("cake-image");
+    var cakePrice = document.getElementById("cake-price");
+    var cake24HPriceChange = document.getElementById("cake-24h-change");
+    var cakeMarketCap = document.getElementById("cake-market-cap");
+
+    var aaveMarketCapRank = document.getElementById("aave-market-cap-rank");
+    var aaveName = document.getElementById("aave-name");
+    var aaveSymbol = document.getElementById("aave-symbol");
+    const aaveImage = document.getElementById("aave-image");
+    var aavePrice = document.getElementById("aave-price");
+    var aave24HPriceChange = document.getElementById("aave-24h-change");
+    var aaveMarketCap = document.getElementById("aave-market-cap");
+
+    var eosMarketCapRank = document.getElementById("eos-market-cap-rank");
+    var eosName = document.getElementById("eos-name");
+    var eosSymbol = document.getElementById("eos-symbol");
+    const eosImage = document.getElementById("eos-image");
+    var eosPrice = document.getElementById("eos-price");
+    var eos24HPriceChange = document.getElementById("eos-24h-change");
+    var eosMarketCap = document.getElementById("eos-market-cap");
+
+    var osmoMarketCapRank = document.getElementById("osmo-market-cap-rank");
+    var osmoName = document.getElementById("osmo-name");
+    var osmoSymbol = document.getElementById("osmo-symbol");
+    const osmoImage = document.getElementById("osmo-image");
+    var osmoPrice = document.getElementById("osmo-price");
+    var osmo24HPriceChange = document.getElementById("osmo-24h-change");
+    var osmoMarketCap = document.getElementById("osmo-market-cap");
+
+    var dfiMarketCapRank = document.getElementById("dfi-market-cap-rank");
+    var dfiName = document.getElementById("dfi-name");
+    var dfiSymbol = document.getElementById("dfi-symbol");
+    const dfiImage = document.getElementById("dfi-image");
+    var dfiPrice = document.getElementById("dfi-price");
+    var dfi24HPriceChange = document.getElementById("dfi-24h-change");
+    var dfiMarketCap = document.getElementById("dfi-market-cap");
+
+    var hntMarketCapRank = document.getElementById("hnt-market-cap-rank");
+    var hntName = document.getElementById("hnt-name");
+    var hntSymbol = document.getElementById("hnt-symbol");
+    const hntImage = document.getElementById("hnt-image");
+    var hntPrice = document.getElementById("hnt-price");
+    var hnt24HPriceChange = document.getElementById("hnt-24h-change");
+    var hntMarketCap = document.getElementById("hnt-market-cap");
+
+    var flowMarketCapRank = document.getElementById("flow-market-cap-rank");
+    var flowName = document.getElementById("flow-name");
+    var flowSymbol = document.getElementById("flow-symbol");
+    const flowImage = document.getElementById("flow-image");
+    var flowPrice = document.getElementById("flow-price");
+    var flow24HPriceChange = document.getElementById("flow-24h-change");
+    var flowMarketCap = document.getElementById("flow-market-cap");
+
+    var zecMarketCapRank = document.getElementById("zec-market-cap-rank");
+    var zecName = document.getElementById("zec-name");
+    var zecSymbol = document.getElementById("zec-symbol");
+    const zecImage = document.getElementById("zec-image");
+    var zecPrice = document.getElementById("zec-price");
+    var zec24HPriceChange = document.getElementById("zec-24h-change");
+    var zecMarketCap = document.getElementById("zec-market-cap");
+
+    var miotaMarketCapRank = document.getElementById("miota-market-cap-rank");
+    var miotaName = document.getElementById("miota-name");
+    var miotaSymbol = document.getElementById("miota-symbol");
+    const miotaImage = document.getElementById("miota-image");
+    var miotaPrice = document.getElementById("miota-price");
+    var miota24HPriceChange = document.getElementById("miota-24h-change");
+    var miotaMarketCap = document.getElementById("miota-market-cap");
+
+    var cusdcMarketCapRank = document.getElementById("cusdc-market-cap-rank");
+    var cusdcName = document.getElementById("cusdc-name");
+    var cusdcSymbol = document.getElementById("cusdc-symbol");
+    const cusdcImage = document.getElementById("cusdc-image");
+    var cusdcPrice = document.getElementById("cusdc-price");
+    var cusdc24HPriceChange = document.getElementById("cusdc-24h-change");
+    var cusdcMarketCap = document.getElementById("cusdc-market-cap");
+
+    var cvxMarketCapRank = document.getElementById("cvx-market-cap-rank");
+    var cvxName = document.getElementById("cvx-name");
+    var cvxSymbol = document.getElementById("cvx-symbol");
+    const cvxImage = document.getElementById("cvx-image");
+    var cvxPrice = document.getElementById("cvx-price");
+    var cvx24HPriceChange = document.getElementById("cvx-24h-change");
+    var cvxMarketCap = document.getElementById("cvx-market-cap");
+
+    var xecMarketCapRank = document.getElementById("xec-market-cap-rank");
+    var xecName = document.getElementById("xec-name");
+    var xecSymbol = document.getElementById("xec-symbol");
+    const xecImage = document.getElementById("xec-image");
+    var xecPrice = document.getElementById("xec-price");
+    var xec24HPriceChange = document.getElementById("xec-24h-change");
+    var xecMarketCap = document.getElementById("xec-market-cap");
+
+    var tfuelMarketCapRank = document.getElementById("tfuel-market-cap-rank");
+    var tfuelName = document.getElementById("tfuel-name");
+    var tfuelSymbol = document.getElementById("tfuel-symbol");
+    const tfuelImage = document.getElementById("tfuel-image");
+    var tfuelPrice = document.getElementById("tfuel-price");
+    var tfuel24HPriceChange = document.getElementById("tfuel-24h-change");
+    var tfuelMarketCap = document.getElementById("tfuel-market-cap");
+
+    var mkrMarketCapRank = document.getElementById("mkr-market-cap-rank");
+    var mkrName = document.getElementById("mkr-name");
+    var mkrSymbol = document.getElementById("mkr-symbol");
+    const mkrImage = document.getElementById("mkr-image");
+    var mkrPrice = document.getElementById("mkr-price");
+    var mkr24HPriceChange = document.getElementById("mkr-24h-change");
+    var mkrMarketCap = document.getElementById("mkr-market-cap");
+
+    var bttMarketCapRank = document.getElementById("btt-market-cap-rank");
+    var bttName = document.getElementById("btt-name");
+    var bttSymbol = document.getElementById("btt-symbol");
+    const bttImage = document.getElementById("btt-image");
+    var bttPrice = document.getElementById("btt-price");
+    var btt24HPriceChange = document.getElementById("btt-24h-change");
+    var bttMarketCap = document.getElementById("btt-market-cap");
+
+    var fxsMarketCapRank = document.getElementById("fxs-market-cap-rank");
+    var fxsName = document.getElementById("fxs-name");
+    var fxsSymbol = document.getElementById("fxs-symbol");
+    const fxsImage = document.getElementById("fxs-image");
+    var fxsPrice = document.getElementById("fxs-price");
+    var fxs24HPriceChange = document.getElementById("fxs-24h-change");
+    var fxsMarketCap = document.getElementById("fxs-market-cap");
+
+    var zilMarketCapRank = document.getElementById("zil-market-cap-rank");
+    var zilName = document.getElementById("zil-name");
+    var zilSymbol = document.getElementById("zil-symbol");
+    const zilImage = document.getElementById("zil-image");
+    var zilPrice = document.getElementById("zil-price");
+    var zil24HPriceChange = document.getElementById("zil-24h-change");
+    var zilMarketCap = document.getElementById("zil-market-cap");
+
+    var hbtcMarketCapRank = document.getElementById("hbtc-market-cap-rank");
+    var hbtcName = document.getElementById("hbtc-name");
+    var hbtcSymbol = document.getElementById("hbtc-symbol");
+    const hbtcImage = document.getElementById("hbtc-image");
+    var hbtcPrice = document.getElementById("hbtc-price");
+    var hbtc24HPriceChange = document.getElementById("hbtc-24h-change");
+    var hbtcMarketCap = document.getElementById("hbtc-market-cap");
+
+        var settings = {
+          "async": true,
+          "scrossDomain": true,
+          "url": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h",
+          "method": "GET",
+          "headers": {}
+        }
+        $.ajax(settings).done(function (response) {
+          console.log(response);
+
+    btcMarketCapRank.innerHTML = response["0"].market_cap_rank;
+    btcName.innerHTML = response["0"].name;
+    btcSymbol.innerHTML = response["0"].symbol;
+    btcImage.setAttribute('src', response["0"].image);
+    btcPrice.innerHTML = response["0"].current_price.toLocaleString();
+    btc24HPriceChange.innerHTML = Math.floor(response["0"].price_change_percentage_24h * 100) / 100;
+    btcMarketCap.innerHTML = response["0"].market_cap.toLocaleString();
+    var btc24HPriceChange1 = Math.floor(response["0"].price_change_percentage_24h * 100) / 100;
+    let percentagebtc = $('#btc-24h-change');
+    if (btc24HPriceChange1 < 0) {
+      document.getElementById("btc-24h-change").style.color = "#ff0000";
+      percentagebtc.text(percentagebtc.text() + '%');
     }
-    $.ajax(settings).done(function (response) {
-      console.log(response);
+    else if (btc24HPriceChange1 >= 0) {
+      document.getElementById("btc-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagebtc.text(percentagebtc.text() + '%');
+    }
 
-      btcMarketCapRank.innerHTML = response["0"].market_cap_rank;
-      btcName.innerHTML = response["0"].name;
-      btcSymbol.innerHTML = response["0"].symbol;
-      btcImage.setAttribute('src', response["0"].image);
-      btcPrice.innerHTML = response["0"].current_price.toLocaleString();
-      btc24HPriceChange.innerHTML = Math.floor(response["0"].price_change_percentage_24h * 100) / 100;
-      btcMarketCap.innerHTML = response["0"].market_cap.toLocaleString();
-      var btc24HPriceChange1 = Math.floor(response["0"].price_change_percentage_24h * 100) / 100;
-      let percentagebtc = $('#bitcoin-24h-change');
-      if (btc24HPriceChange1 < 0) {
-        document.getElementById("bitcoin-24h-change").style.color = "#ff0000";
-        percentagebtc.text(percentagebtc.text() + '%');
-      }
-      else if (btc24HPriceChange1 >= 0) {
-        document.getElementById("bitcoin-24h-change").style.color = "rgb(9, 255, 0)";
-        percentagebtc.text(percentagebtc.text() + '%');
-      }
+    ///////////////////////////////////////////////////////////////////
 
-      ethMarketCapRank.innerHTML = response["1"].market_cap_rank;
-      ethName.innerHTML = response["1"].name;
-      ethSymbol.innerHTML = response["1"].symbol;
-      ethImage.setAttribute('src', response["1"].image);
-      ethPrice.innerHTML = response["1"].current_price.toLocaleString();
-      eth24HPriceChange.innerHTML = Math.floor(response["1"].price_change_percentage_24h * 100) / 100;
-      ethMarketCap.innerHTML = response["1"].market_cap.toLocaleString();
-      var eth24HPriceChange1 = Math.floor(response["1"].price_change_percentage_24h * 100) / 100;
-      let percentageeth = $('#ethereum-24h-change');
-      if (eth24HPriceChange1 < 0) {
-        document.getElementById("ethereum-24h-change").style.color = "#ff0000";
-        percentageeth.text(percentageeth.text() + '%');
-      }
-      else if (eth24HPriceChange1 >= 0) {
-        document.getElementById("ethereum-24h-change").style.color = "rgb(9, 255, 0)";
-        percentageeth.text(percentageeth.text() + '%');
-      }
+    ethMarketCapRank.innerHTML = response["1"].market_cap_rank;
+    ethName.innerHTML = response["1"].name;
+    ethSymbol.innerHTML = response["1"].symbol;
+    ethImage.setAttribute('src', response["1"].image);
+    ethPrice.innerHTML = response["1"].current_price.toLocaleString();
+    eth24HPriceChange.innerHTML = Math.floor(response["1"].price_change_percentage_24h * 100) / 100;
+    ethMarketCap.innerHTML = response["1"].market_cap.toLocaleString();
+    var eth24HPriceChange1 = Math.floor(response["1"].price_change_percentage_24h * 100) / 100;
+    let percentageeth = $('#eth-24h-change');
+    if (eth24HPriceChange1 < 0) {
+      document.getElementById("eth-24h-change").style.color = "#ff0000";
+      percentageeth.text(percentageeth.text() + '%');
+    }
+    else if (eth24HPriceChange1 >= 0) {
+      document.getElementById("eth-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageeth.text(percentageeth.text() + '%');
+    }
 
-      usdtMarketCapRank.innerHTML = response["2"].market_cap_rank;
-      usdtName.innerHTML = response["2"].name;
-      usdtSymbol.innerHTML = response["2"].symbol;
-      usdtImage.setAttribute('src', response["2"].image);
-      usdtPrice.innerHTML = response["2"].current_price.toLocaleString();
-      usdt24HPriceChange.innerHTML = Math.floor(response["2"].price_change_percentage_24h * 100) / 100;
-      var usdt24HPriceChange1 = Math.floor(response["2"].price_change_percentage_24h * 100) / 100;
-      let percentageusdt = $('#tether-24h-change');
-      if (usdt24HPriceChange1 < 0) {
-        document.getElementById("tether-24h-change").style.color = "#ff0000";
-        percentageusdt.text(percentageusdt.text() + '%');
-      }
-      else if (usdt24HPriceChange1 >= 0) {
-        document.getElementById("tether-24h-change").style.color = "rgb(9, 255, 0)";
-        percentageusdt.text(percentageusdt.text() + '%');
-      }
+    ///////////////////////////////////////////////////////////////////
 
-      usdtMarketCap.innerHTML = response["2"].market_cap.toLocaleString();
+    usdtMarketCapRank.innerHTML = response["2"].market_cap_rank;
+    usdtName.innerHTML = response["2"].name;
+    usdtSymbol.innerHTML = response["2"].symbol;
+    usdtImage.setAttribute('src', response["2"].image);
+    usdtPrice.innerHTML = response["2"].current_price.toLocaleString();
+    usdt24HPriceChange.innerHTML = Math.floor(response["2"].price_change_percentage_24h * 100) / 100;
+    usdtMarketCap.innerHTML = response["2"].market_cap.toLocaleString();
+    var usdt24HPriceChange1 = Math.floor(response["2"].price_change_percentage_24h * 100) / 100;
+    let percentageusdt = $('#usdt-24h-change');
+    if (usdt24HPriceChange1 < 0) {
+      document.getElementById("usdt-24h-change").style.color = "#ff0000";
+      percentageusdt.text(percentageusdt.text() + '%');
+    }
+    else if (usdt24HPriceChange1 >= 0) {
+      document.getElementById("usdt-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageusdt.text(percentageusdt.text() + '%');
+    }
 
-      bnbMarketCapRank.innerHTML = response["3"].market_cap_rank;
-      bnbName.innerHTML = response["3"].name;
-      bnbSymbol.innerHTML = response["3"].symbol;
-      bnbImage.setAttribute('src', response["3"].image);
-      bnbPrice.innerHTML = response["3"].current_price.toLocaleString();
-      bnb24HPriceChange.innerHTML = Math.floor(response["3"].price_change_percentage_24h * 100) / 100;
-      bnbMarketCap.innerHTML = response["3"].market_cap.toLocaleString();
+    ///////////////////////////////////////////////////////////////////
 
-      var bnb24HPriceChange1 = Math.floor(response["3"].price_change_percentage_24h * 100) / 100;
-      let percentagebnb = $('#bnb-24h-change');
-      if (bnb24HPriceChange1 < 0) {
-        document.getElementById("bnb-24h-change").style.color = "#ff0000";
-        percentagebnb.text(percentagebnb.text() + '%');
-      }
-      else if (bnb24HPriceChange1 >= 0) {
-        document.getElementById("bnb-24h-change").style.color = "rgb(9, 255, 0)";
-        percentagebnb.text(percentagebnb.text() + '%');
-      }
+    bnbMarketCapRank.innerHTML = response["3"].market_cap_rank;
+    bnbName.innerHTML = response["3"].name;
+    bnbSymbol.innerHTML = response["3"].symbol;
+    bnbImage.setAttribute('src', response["3"].image);
+    bnbPrice.innerHTML = response["3"].current_price.toLocaleString();
+    bnb24HPriceChange.innerHTML = Math.floor(response["3"].price_change_percentage_24h * 100) / 100;
+    bnbMarketCap.innerHTML = response["3"].market_cap.toLocaleString();
+    var bnb24HPriceChange1 = Math.floor(response["3"].price_change_percentage_24h * 100) / 100;
+    let percentagebnb = $('#bnb-24h-change');
+    if (bnb24HPriceChange1 < 0) {
+      document.getElementById("bnb-24h-change").style.color = "#ff0000";
+      percentagebnb.text(percentagebnb.text() + '%');
+    }
+    else if (bnb24HPriceChange1 >= 0) {
+      document.getElementById("bnb-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagebnb.text(percentagebnb.text() + '%');
+    }
 
-      usdcMarketCapRank.innerHTML = response["4"].market_cap_rank;
-      usdcName.innerHTML = response["4"].name;
-      usdcSymbol.innerHTML = response["4"].symbol;
-      usdcImage.setAttribute('src', response["4"].image);
-      usdcPrice.innerHTML = response["4"].current_price.toLocaleString();
-      usdc24HPriceChange.innerHTML = Math.floor(response["4"].price_change_percentage_24h * 100) / 100;
-      usdcMarketCap.innerHTML = response["4"].market_cap.toLocaleString();
+    ///////////////////////////////////////////////////////////////////
 
-      var usdc24HPriceChange1 = Math.floor(response["4"].price_change_percentage_24h * 100) / 100;
-      let percentageusdc = $('#usdc-24h-change');
-      if (usdc24HPriceChange1 < 0) {
-        document.getElementById("usdc-24h-change").style.color = "#ff0000";
-        percentageusdc.text(percentageusdc.text() + '%');
-      }
-      else if (usdc24HPriceChange1 >= 0) {
-        document.getElementById("usdc-24h-change").style.color = "rgb(9, 255, 0)";
-        percentageusdc.text(percentageusdc.text() + '%');
-      }
+    usdcMarketCapRank.innerHTML = response["4"].market_cap_rank;
+    usdcName.innerHTML = response["4"].name;
+    usdcSymbol.innerHTML = response["4"].symbol;
+    usdcImage.setAttribute('src', response["4"].image);
+    usdcPrice.innerHTML = response["4"].current_price.toLocaleString();
+    usdc24HPriceChange.innerHTML = Math.floor(response["4"].price_change_percentage_24h * 100) / 100;
+    usdcMarketCap.innerHTML = response["4"].market_cap.toLocaleString();
+    var usdc24HPriceChange1 = Math.floor(response["4"].price_change_percentage_24h * 100) / 100;
+    let percentageusdc = $('#usdc-24h-change');
+    if (usdc24HPriceChange1 < 0) {
+      document.getElementById("usdc-24h-change").style.color = "#ff0000";
+      percentageusdc.text(percentageusdc.text() + '%');
+    }
+    else if (usdc24HPriceChange1 >= 0) {
+      document.getElementById("usdc-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageusdc.text(percentageusdc.text() + '%');
+    }
 
-      xrpMarketCapRank.innerHTML = response["5"].market_cap_rank;
-      xrpName.innerHTML = response["5"].name;
-      xrpSymbol.innerHTML = response["5"].symbol;
-      xrpImage.setAttribute('src', response["5"].image);
-      xrpPrice.innerHTML = response["5"].current_price.toLocaleString();
-      xrp24HPriceChange.innerHTML = Math.floor(response["5"].price_change_percentage_24h * 100) / 100;
-      xrpMarketCap.innerHTML = response["5"].market_cap.toLocaleString();
+    ///////////////////////////////////////////////////////////////////
 
-      var xrp24HPriceChange1 = Math.floor(response["5"].price_change_percentage_24h * 100) / 100;
-      let percentagexrp = $('#xrp-24h-change');
-      if (xrp24HPriceChange1 < 0) {
-        document.getElementById("xrp-24h-change").style.color = "#ff0000";
-        percentagexrp.text(percentagexrp.text() + '%');
-      }
-      else if (xrp24HPriceChange1 >= 0) {
-        document.getElementById("xrp-24h-change").style.color = "rgb(9, 255, 0)";
-        percentagexrp.text(percentagexrp.text() + '%');
-      }
+    xrpMarketCapRank.innerHTML = response["5"].market_cap_rank;
+    xrpName.innerHTML = response["5"].name;
+    xrpSymbol.innerHTML = response["5"].symbol;
+    xrpImage.setAttribute('src', response["5"].image);
+    xrpPrice.innerHTML = response["5"].current_price.toLocaleString();
+    xrp24HPriceChange.innerHTML = Math.floor(response["5"].price_change_percentage_24h * 100) / 100;
+    xrpMarketCap.innerHTML = response["5"].market_cap.toLocaleString();
+    var xrp24HPriceChange1 = Math.floor(response["5"].price_change_percentage_24h * 100) / 100;
+    let percentagexrp = $('#xrp-24h-change');
+    if (xrp24HPriceChange1 < 0) {
+      document.getElementById("xrp-24h-change").style.color = "#ff0000";
+      percentagexrp.text(percentagexrp.text() + '%');
+    }
+    else if (xrp24HPriceChange1 >= 0) {
+      document.getElementById("xrp-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagexrp.text(percentagexrp.text() + '%');
+    }
 
-      adaMarketCapRank.innerHTML = response["6"].market_cap_rank;
-      adaName.innerHTML = response["6"].name;
-      adaSymbol.innerHTML = response["6"].symbol;
-      adaImage.setAttribute('src', response["6"].image);
-      adaPrice.innerHTML = response["6"].current_price.toLocaleString();
-      ada24HPriceChange.innerHTML = Math.floor(response["6"].price_change_percentage_24h * 100) / 100;
-      adaMarketCap.innerHTML = response["6"].market_cap.toLocaleString();
+    ///////////////////////////////////////////////////////////////////
 
-      var ada24HPriceChange1 = Math.floor(response["6"].price_change_percentage_24h * 100) / 100;
-      let percentageada = $('#cardano-24h-change');
-      if (ada24HPriceChange1 < 0) {
-        document.getElementById("cardano-24h-change").style.color = "#ff0000";
-        percentageada.text(percentageada.text() + '%');
-      }
-      else if (ada24HPriceChange1 >= 0) {
-        document.getElementById("cardano-24h-change").style.color = "rgb(9, 255, 0)";
-        percentageada.text(percentageada.text() + '%');
-      }
+    solMarketCapRank.innerHTML = response["6"].market_cap_rank;
+    solName.innerHTML = response["6"].name;
+    solSymbol.innerHTML = response["6"].symbol;
+    solImage.setAttribute('src', response["6"].image);
+    solPrice.innerHTML = response["6"].current_price.toLocaleString();
+    sol24HPriceChange.innerHTML = Math.floor(response["6"].price_change_percentage_24h * 100) / 100;
+    solMarketCap.innerHTML = response["6"].market_cap.toLocaleString();
+    var sol24HPriceChange1 = Math.floor(response["6"].price_change_percentage_24h * 100) / 100;
+    let percentagesol = $('#sol-24h-change');
+    if (sol24HPriceChange1 < 0) {
+      document.getElementById("sol-24h-change").style.color = "#ff0000";
+      percentagesol.text(percentagesol.text() + '%');
+    }
+    else if (sol24HPriceChange1 >= 0) {
+      document.getElementById("sol-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagesol.text(percentagesol.text() + '%');
+    }
 
-      solMarketCapRank.innerHTML = response["7"].market_cap_rank;
-      solName.innerHTML = response["7"].name;
-      solSymbol.innerHTML = response["7"].symbol;
-      solImage.setAttribute('src', response["7"].image);
-      solPrice.innerHTML = response["7"].current_price.toLocaleString();
-      sol24HPriceChange.innerHTML = Math.floor(response["7"].price_change_percentage_24h * 100) / 100;
-      solMarketCap.innerHTML = response["7"].market_cap.toLocaleString();
+    ///////////////////////////////////////////////////////////////////
 
-      var sol24HPriceChange1 = Math.floor(response["7"].price_change_percentage_24h * 100) / 100;
-      let percentagesol = $('#solana-24h-change');
-      if (sol24HPriceChange1 < 0) {
-        document.getElementById("solana-24h-change").style.color = "#ff0000";
-        percentagesol.text(percentagesol.text() + '%');
-      }
-      else if (sol24HPriceChange1 >= 0) {
-        document.getElementById("solana-24h-change").style.color = "rgb(9, 255, 0)";
-        percentagesol.text(percentagesol.text() + '%');
-      }
+    lunaMarketCapRank.innerHTML = response["7"].market_cap_rank;
+    lunaName.innerHTML = response["7"].name;
+    lunaSymbol.innerHTML = response["7"].symbol;
+    lunaImage.setAttribute('src', response["7"].image);
+    lunaPrice.innerHTML = response["7"].current_price.toLocaleString();
+    luna24HPriceChange.innerHTML = Math.floor(response["7"].price_change_percentage_24h * 100) / 100;
+    lunaMarketCap.innerHTML = response["7"].market_cap.toLocaleString();
+    var luna24HPriceChange1 = Math.floor(response["7"].price_change_percentage_24h * 100) / 100;
+    let percentageluna = $('#luna-24h-change');
+    if (luna24HPriceChange1 < 0) {
+      document.getElementById("luna-24h-change").style.color = "#ff0000";
+      percentageluna.text(percentageluna.text() + '%');
+    }
+    else if (luna24HPriceChange1 >= 0) {
+      document.getElementById("luna-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageluna.text(percentageluna.text() + '%');
+    }
 
-      lunaMarketCapRank.innerHTML = response["8"].market_cap_rank;
-      lunaName.innerHTML = response["8"].name;
-      lunaSymbol.innerHTML = response["8"].symbol;
-      lunaImage.setAttribute('src', response["8"].image);
-      lunaPrice.innerHTML = response["8"].current_price.toLocaleString();
-      luna24HPriceChange.innerHTML = Math.floor(response["8"].price_change_percentage_24h * 100) / 100;
-      lunaMarketCap.innerHTML = response["8"].market_cap.toLocaleString();
+    ///////////////////////////////////////////////////////////////////
 
-      var luna24HPriceChange1 = Math.floor(response["8"].price_change_percentage_24h * 100) / 100;
-      let percentageluna = $('#terra-24h-change');
-      if (luna24HPriceChange1 < 0) {
-        document.getElementById("terra-24h-change").style.color = "#ff0000";
-        percentageluna.text(percentageluna.text() + '%');
-      }
-      else if (luna24HPriceChange1 >= 0) {
-        document.getElementById("terra-24h-change").style.color = "rgb(9, 255, 0)";
-        percentageluna.text(percentageluna.text() + '%');
-      }
+    adaMarketCapRank.innerHTML = response["8"].market_cap_rank;
+    adaName.innerHTML = response["8"].name;
+    adaSymbol.innerHTML = response["8"].symbol;
+    adaImage.setAttribute('src', response["8"].image);
+    adaPrice.innerHTML = response["8"].current_price.toLocaleString();
+    ada24HPriceChange.innerHTML = Math.floor(response["8"].price_change_percentage_24h * 100) / 100;
+    adaMarketCap.innerHTML = response["8"].market_cap.toLocaleString();
+    var ada24HPriceChange1 = Math.floor(response["8"].price_change_percentage_24h * 100) / 100;
+    let percentageada = $('#ada-24h-change');
+    if (ada24HPriceChange1 < 0) {
+      document.getElementById("ada-24h-change").style.color = "#ff0000";
+      percentageada.text(percentageada.text() + '%');
+    }
+    else if (ada24HPriceChange1 >= 0) {
+      document.getElementById("ada-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageada.text(percentageada.text() + '%');
+    }
 
-      avaxMarketCapRank.innerHTML = response["9"].market_cap_rank;
-      avaxName.innerHTML = response["9"].name;
-      avaxSymbol.innerHTML = response["9"].symbol;
-      avaxImage.setAttribute('src', response["9"].image);
-      avaxPrice.innerHTML = response["9"].current_price.toLocaleString();
-      avax24HPriceChange.innerHTML = Math.floor(response["9"].price_change_percentage_24h * 100) / 100;
-      avaxMarketCap.innerHTML = response["9"].market_cap.toLocaleString();
+    ///////////////////////////////////////////////////////////////////
 
-      var avax24HPriceChange1 = Math.floor(response["8"].price_change_percentage_24h * 100) / 100;
-      let percentageavax = $('#avalanche-24h-change');
-      if (avax24HPriceChange1 < 0) {
-        document.getElementById("avalanche-24h-change").style.color = "#ff0000";
-        percentageavax.text(percentageavax.text() + '%');
-      }
-      else if (avax24HPriceChange1 >= 0) {
-        document.getElementById("avalanche-24h-change").style.color = "rgb(9, 255, 0)";
-        percentageavax.text(percentageavax.text() + '%');
-      }
+    avaxMarketCapRank.innerHTML = response["9"].market_cap_rank;
+    avaxName.innerHTML = response["9"].name;
+    avaxSymbol.innerHTML = response["9"].symbol;
+    avaxImage.setAttribute('src', response["9"].image);
+    avaxPrice.innerHTML = response["9"].current_price.toLocaleString();
+    avax24HPriceChange.innerHTML = Math.floor(response["9"].price_change_percentage_24h * 100) / 100;
+    avaxMarketCap.innerHTML = response["9"].market_cap.toLocaleString();
+    var avax24HPriceChange1 = Math.floor(response["9"].price_change_percentage_24h * 100) / 100;
+    let percentageavax = $('#avax-24h-change');
+    if (avax24HPriceChange1 < 0) {
+      document.getElementById("avax-24h-change").style.color = "#ff0000";
+      percentageavax.text(percentageavax.text() + '%');
+    }
+    else if (avax24HPriceChange1 >= 0) {
+      document.getElementById("avax-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageavax.text(percentageavax.text() + '%');
+    }
 
-    });
+    ///////////////////////////////////////////////////////////////////
 
+    dotMarketCapRank.innerHTML = response["10"].market_cap_rank;
+    dotName.innerHTML = response["10"].name;
+    dotSymbol.innerHTML = response["10"].symbol;
+    dotImage.setAttribute('src', response["10"].image);
+    dotPrice.innerHTML = response["10"].current_price.toLocaleString();
+    dot24HPriceChange.innerHTML = Math.floor(response["10"].price_change_percentage_24h * 100) / 100;
+    dotMarketCap.innerHTML = response["10"].market_cap.toLocaleString();
+    var dot24HPriceChange1 = Math.floor(response["10"].price_change_percentage_24h * 100) / 100;
+    let percentagedot = $('#dot-24h-change');
+    if (dot24HPriceChange1 < 0) {
+      document.getElementById("dot-24h-change").style.color = "#ff0000";
+      percentagedot.text(percentagedot.text() + '%');
+    }
+    else if (dot24HPriceChange1 >= 0) {
+      document.getElementById("dot-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagedot.text(percentagedot.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    dogeMarketCapRank.innerHTML = response["11"].market_cap_rank;
+    dogeName.innerHTML = response["11"].name;
+    dogeSymbol.innerHTML = response["11"].symbol;
+    dogeImage.setAttribute('src', response["11"].image);
+    dogePrice.innerHTML = response["11"].current_price.toLocaleString();
+    doge24HPriceChange.innerHTML = Math.floor(response["11"].price_change_percentage_24h * 100) / 100;
+    dogeMarketCap.innerHTML = response["11"].market_cap.toLocaleString();
+    var doge24HPriceChange1 = Math.floor(response["11"].price_change_percentage_24h * 100) / 100;
+    let percentagedoge = $('#doge-24h-change');
+    if (doge24HPriceChange1 < 0) {
+      document.getElementById("doge-24h-change").style.color = "#ff0000";
+      percentagedoge.text(percentagedoge.text() + '%');
+    }
+    else if (doge24HPriceChange1 >= 0) {
+      document.getElementById("doge-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagedoge.text(percentagedoge.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    busdMarketCapRank.innerHTML = response["12"].market_cap_rank;
+    busdName.innerHTML = response["12"].name;
+    busdSymbol.innerHTML = response["12"].symbol;
+    busdImage.setAttribute('src', response["12"].image);
+    busdPrice.innerHTML = response["12"].current_price.toLocaleString();
+    busd24HPriceChange.innerHTML = Math.floor(response["12"].price_change_percentage_24h * 100) / 100;
+    busdMarketCap.innerHTML = response["12"].market_cap.toLocaleString();
+    var busd24HPriceChange1 = Math.floor(response["12"].price_change_percentage_24h * 100) / 100;
+    let percentagebusd = $('#busd-24h-change');
+    if (busd24HPriceChange1 < 0) {
+      document.getElementById("busd-24h-change").style.color = "#ff0000";
+      percentagebusd.text(percentagebusd.text() + '%');
+    }
+    else if (busd24HPriceChange1 >= 0) {
+      document.getElementById("busd-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagebusd.text(percentagebusd.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    ustMarketCapRank.innerHTML = response["13"].market_cap_rank;
+    ustName.innerHTML = response["13"].name;
+    ustSymbol.innerHTML = response["13"].symbol;
+    ustImage.setAttribute('src', response["13"].image);
+    ustPrice.innerHTML = response["13"].current_price.toLocaleString();
+    ust24HPriceChange.innerHTML = Math.floor(response["13"].price_change_percentage_24h * 100) / 100;
+    ustMarketCap.innerHTML = response["13"].market_cap.toLocaleString();
+    var ust24HPriceChange1 = Math.floor(response["13"].price_change_percentage_24h * 100) / 100;
+    let percentageust = $('#ust-24h-change');
+    if (ust24HPriceChange1 < 0) {
+      document.getElementById("ust-24h-change").style.color = "#ff0000";
+      percentageust.text(percentageust.text() + '%');
+    }
+    else if (ust24HPriceChange1 >= 0) {
+      document.getElementById("ust-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageust.text(percentageust.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    shibMarketCapRank.innerHTML = response["14"].market_cap_rank;
+    shibName.innerHTML = response["14"].name;
+    shibSymbol.innerHTML = response["14"].symbol;
+    shibImage.setAttribute('src', response["14"].image);
+    shibPrice.innerHTML = response["14"].current_price.toLocaleString();
+    shib24HPriceChange.innerHTML = Math.floor(response["14"].price_change_percentage_24h * 100) / 100;
+    shibMarketCap.innerHTML = response["14"].market_cap.toLocaleString();
+    var shib24HPriceChange1 = Math.floor(response["14"].price_change_percentage_24h * 100) / 100;
+    let percentageshib = $('#shib-24h-change');
+    if (shib24HPriceChange1 < 0) {
+      document.getElementById("shib-24h-change").style.color = "#ff0000";
+      percentageshib.text(percentageshib.text() + '%');
+    }
+    else if (shib24HPriceChange1 >= 0) {
+      document.getElementById("shib-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageshib.text(percentageshib.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    wbtcMarketCapRank.innerHTML = response["15"].market_cap_rank;
+    wbtcName.innerHTML = response["15"].name;
+    wbtcSymbol.innerHTML = response["15"].symbol;
+    wbtcImage.setAttribute('src', response["15"].image);
+    wbtcPrice.innerHTML = response["15"].current_price.toLocaleString();
+    wbtc24HPriceChange.innerHTML = Math.floor(response["15"].price_change_percentage_24h * 100) / 100;
+    wbtcMarketCap.innerHTML = response["15"].market_cap.toLocaleString();
+    var wbtc24HPriceChange1 = Math.floor(response["15"].price_change_percentage_24h * 100) / 100;
+    let percentagewbtc = $('#wbtc-24h-change');
+    if (wbtc24HPriceChange1 < 0) {
+      document.getElementById("wbtc-24h-change").style.color = "#ff0000";
+      percentagewbtc.text(percentagewbtc.text() + '%');
+    }
+    else if (wbtc24HPriceChange1 >= 0) {
+      document.getElementById("wbtc-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagewbtc.text(percentagewbtc.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    croMarketCapRank.innerHTML = response["16"].market_cap_rank;
+    croName.innerHTML = response["16"].name;
+    croSymbol.innerHTML = response["16"].symbol;
+    croImage.setAttribute('src', response["16"].image);
+    croPrice.innerHTML = response["16"].current_price.toLocaleString();
+    cro24HPriceChange.innerHTML = Math.floor(response["16"].price_change_percentage_24h * 100) / 100;
+    croMarketCap.innerHTML = response["16"].market_cap.toLocaleString();
+    var cro24HPriceChange1 = Math.floor(response["16"].price_change_percentage_24h * 100) / 100;
+    let percentagecro = $('#cro-24h-change');
+    if (cro24HPriceChange1 < 0) {
+      document.getElementById("cro-24h-change").style.color = "#ff0000";
+      percentagecro.text(percentagecro.text() + '%');
+    }
+    else if (cro24HPriceChange1 >= 0) {
+      document.getElementById("cro-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagecro.text(percentagecro.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    nearMarketCapRank.innerHTML = response["17"].market_cap_rank;
+    nearName.innerHTML = response["17"].name;
+    nearSymbol.innerHTML = response["17"].symbol;
+    nearImage.setAttribute('src', response["17"].image);
+    nearPrice.innerHTML = response["17"].current_price.toLocaleString();
+    near24HPriceChange.innerHTML = Math.floor(response["17"].price_change_percentage_24h * 100) / 100;
+    nearMarketCap.innerHTML = response["17"].market_cap.toLocaleString();
+    var near24HPriceChange1 = Math.floor(response["17"].price_change_percentage_24h * 100) / 100;
+    let percentagenear = $('#near-24h-change');
+    if (near24HPriceChange1 < 0) {
+      document.getElementById("near-24h-change").style.color = "#ff0000";
+      percentagenear.text(percentagenear.text() + '%');
+    }
+    else if (near24HPriceChange1 >= 0) {
+      document.getElementById("near-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagenear.text(percentagenear.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    stethMarketCapRank.innerHTML = response["18"].market_cap_rank;
+    stethName.innerHTML = response["18"].name;
+    stethSymbol.innerHTML = response["18"].symbol;
+    stethImage.setAttribute('src', response["18"].image);
+    stethPrice.innerHTML = response["18"].current_price.toLocaleString();
+    steth24HPriceChange.innerHTML = Math.floor(response["18"].price_change_percentage_24h * 100) / 100;
+    stethMarketCap.innerHTML = response["18"].market_cap.toLocaleString();
+    var steth24HPriceChange1 = Math.floor(response["18"].price_change_percentage_24h * 100) / 100;
+    let percentagesteth = $('#steth-24h-change');
+    if (steth24HPriceChange1 < 0) {
+      document.getElementById("steth-24h-change").style.color = "#ff0000";
+      percentagesteth.text(percentagesteth.text() + '%');
+    }
+    else if (steth24HPriceChange1 >= 0) {
+      document.getElementById("steth-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagesteth.text(percentagesteth.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    maticMarketCapRank.innerHTML = response["19"].market_cap_rank;
+    maticName.innerHTML = response["19"].name;
+    maticSymbol.innerHTML = response["19"].symbol;
+    maticImage.setAttribute('src', response["19"].image);
+    maticPrice.innerHTML = response["19"].current_price.toLocaleString();
+    matic24HPriceChange.innerHTML = Math.floor(response["19"].price_change_percentage_24h * 100) / 100;
+    maticMarketCap.innerHTML = response["19"].market_cap.toLocaleString();
+    var matic24HPriceChange1 = Math.floor(response["19"].price_change_percentage_24h * 100) / 100;
+    let percentagematic = $('#matic-24h-change');
+    if (matic24HPriceChange1 < 0) {
+      document.getElementById("matic-24h-change").style.color = "#ff0000";
+      percentagematic.text(percentagematic.text() + '%');
+    }
+    else if (matic24HPriceChange1 >= 0) {
+      document.getElementById("matic-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagematic.text(percentagematic.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    daiMarketCapRank.innerHTML = response["20"].market_cap_rank;
+    daiName.innerHTML = response["20"].name;
+    daiSymbol.innerHTML = response["20"].symbol;
+    daiImage.setAttribute('src', response["20"].image);
+    daiPrice.innerHTML = response["20"].current_price.toLocaleString();
+    dai24HPriceChange.innerHTML = Math.floor(response["20"].price_change_percentage_24h * 100) / 100;
+    daiMarketCap.innerHTML = response["20"].market_cap.toLocaleString();
+    var dai24HPriceChange1 = Math.floor(response["20"].price_change_percentage_24h * 100) / 100;
+    let percentagedai = $('#dai-24h-change');
+    if (dai24HPriceChange1 < 0) {
+      document.getElementById("dai-24h-change").style.color = "#ff0000";
+      percentagedai.text(percentagedai.text() + '%');
+    }
+    else if (dai24HPriceChange1 >= 0) {
+      document.getElementById("dai-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagedai.text(percentagedai.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    atomMarketCapRank.innerHTML = response["21"].market_cap_rank;
+    atomName.innerHTML = response["21"].name;
+    atomSymbol.innerHTML = response["21"].symbol;
+    atomImage.setAttribute('src', response["21"].image);
+    atomPrice.innerHTML = response["21"].current_price.toLocaleString();
+    atom24HPriceChange.innerHTML = Math.floor(response["21"].price_change_percentage_24h * 100) / 100;
+    atomMarketCap.innerHTML = response["21"].market_cap.toLocaleString();
+    var atom24HPriceChange1 = Math.floor(response["21"].price_change_percentage_24h * 100) / 100;
+    let percentageatom = $('#atom-24h-change');
+    if (atom24HPriceChange1 < 0) {
+      document.getElementById("atom-24h-change").style.color = "#ff0000";
+      percentageatom.text(percentageatom.text() + '%');
+    }
+    else if (atom24HPriceChange1 >= 0) {
+      document.getElementById("atom-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageatom.text(percentageatom.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    ltcMarketCapRank.innerHTML = response["22"].market_cap_rank;
+    ltcName.innerHTML = response["22"].name;
+    ltcSymbol.innerHTML = response["22"].symbol;
+    ltcImage.setAttribute('src', response["22"].image);
+    ltcPrice.innerHTML = response["22"].current_price.toLocaleString();
+    ltc24HPriceChange.innerHTML = Math.floor(response["22"].price_change_percentage_24h * 100) / 100;
+    ltcMarketCap.innerHTML = response["22"].market_cap.toLocaleString();
+    var ltc24HPriceChange1 = Math.floor(response["22"].price_change_percentage_24h * 100) / 100;
+    let percentageltc = $('#ltc-24h-change');
+    if (ltc24HPriceChange1 < 0) {
+      document.getElementById("ltc-24h-change").style.color = "#ff0000";
+      percentageltc.text(percentageltc.text() + '%');
+    }
+    else if (ltc24HPriceChange1 >= 0) {
+      document.getElementById("ltc-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageltc.text(percentageltc.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    linkMarketCapRank.innerHTML = response["23"].market_cap_rank;
+    linkName.innerHTML = response["23"].name;
+    linkSymbol.innerHTML = response["23"].symbol;
+    linkImage.setAttribute('src', response["23"].image);
+    linkPrice.innerHTML = response["23"].current_price.toLocaleString();
+    link24HPriceChange.innerHTML = Math.floor(response["23"].price_change_percentage_24h * 100) / 100;
+    linkMarketCap.innerHTML = response["23"].market_cap.toLocaleString();
+    var link24HPriceChange1 = Math.floor(response["23"].price_change_percentage_24h * 100) / 100;
+    let percentagelink = $('#link-24h-change');
+    if (link24HPriceChange1 < 0) {
+      document.getElementById("link-24h-change").style.color = "#ff0000";
+      percentagelink.text(percentagelink.text() + '%');
+    }
+    else if (link24HPriceChange1 >= 0) {
+      document.getElementById("link-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagelink.text(percentagelink.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    trxMarketCapRank.innerHTML = response["24"].market_cap_rank;
+    trxName.innerHTML = response["24"].name;
+    trxSymbol.innerHTML = response["24"].symbol;
+    trxImage.setAttribute('src', response["24"].image);
+    trxPrice.innerHTML = response["24"].current_price.toLocaleString();
+    trx24HPriceChange.innerHTML = Math.floor(response["24"].price_change_percentage_24h * 100) / 100;
+    trxMarketCap.innerHTML = response["24"].market_cap.toLocaleString();
+    var trx24HPriceChange1 = Math.floor(response["24"].price_change_percentage_24h * 100) / 100;
+    let percentagetrx = $('#trx-24h-change');
+    if (trx24HPriceChange1 < 0) {
+      document.getElementById("trx-24h-change").style.color = "#ff0000";
+      percentagetrx.text(percentagetrx.text() + '%');
+    }
+    else if (trx24HPriceChange1 >= 0) {
+      document.getElementById("trx-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagetrx.text(percentagetrx.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    fttMarketCapRank.innerHTML = response["25"].market_cap_rank;
+    fttName.innerHTML = response["25"].name;
+    fttSymbol.innerHTML = response["25"].symbol;
+    fttImage.setAttribute('src', response["25"].image);
+    fttPrice.innerHTML = response["25"].current_price.toLocaleString();
+    ftt24HPriceChange.innerHTML = Math.floor(response["25"].price_change_percentage_24h * 100) / 100;
+    fttMarketCap.innerHTML = response["25"].market_cap.toLocaleString();
+    var ftt24HPriceChange1 = Math.floor(response["25"].price_change_percentage_24h * 100) / 100;
+    let percentageftt = $('#ftt-24h-change');
+    if (ftt24HPriceChange1 < 0) {
+      document.getElementById("ftt-24h-change").style.color = "#ff0000";
+      percentageftt.text(percentageftt.text() + '%');
+    }
+    else if (ftt24HPriceChange1 >= 0) {
+      document.getElementById("ftt-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageftt.text(percentageftt.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    bchMarketCapRank.innerHTML = response["26"].market_cap_rank;
+    bchName.innerHTML = response["26"].name;
+    bchSymbol.innerHTML = response["26"].symbol;
+    bchImage.setAttribute('src', response["26"].image);
+    bchPrice.innerHTML = response["26"].current_price.toLocaleString();
+    bch24HPriceChange.innerHTML = Math.floor(response["26"].price_change_percentage_24h * 100) / 100;
+    bchMarketCap.innerHTML = response["26"].market_cap.toLocaleString();
+    var bch24HPriceChange1 = Math.floor(response["26"].price_change_percentage_24h * 100) / 100;
+    let percentagebch = $('#bch-24h-change');
+    if (bch24HPriceChange1 < 0) {
+      document.getElementById("bch-24h-change").style.color = "#ff0000";
+      percentagebch.text(percentagebch.text() + '%');
+    }
+    else if (bch24HPriceChange1 >= 0) {
+      document.getElementById("bch-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagebch.text(percentagebch.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    leoMarketCapRank.innerHTML = response["27"].market_cap_rank;
+    leoName.innerHTML = response["27"].name;
+    leoSymbol.innerHTML = response["27"].symbol;
+    leoImage.setAttribute('src', response["27"].image);
+    leoPrice.innerHTML = response["27"].current_price.toLocaleString();
+    leo24HPriceChange.innerHTML = Math.floor(response["27"].price_change_percentage_24h * 100) / 100;
+    leoMarketCap.innerHTML = response["27"].market_cap.toLocaleString();
+    var leo24HPriceChange1 = Math.floor(response["27"].price_change_percentage_24h * 100) / 100;
+    let percentageleo = $('#leo-24h-change');
+    if (leo24HPriceChange1 < 0) {
+      document.getElementById("leo-24h-change").style.color = "#ff0000";
+      percentageleo.text(percentageleo.text() + '%');
+    }
+    else if (leo24HPriceChange1 >= 0) {
+      document.getElementById("leo-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageleo.text(percentageleo.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    etcMarketCapRank.innerHTML = response["28"].market_cap_rank;
+    etcName.innerHTML = response["28"].name;
+    etcSymbol.innerHTML = response["28"].symbol;
+    etcImage.setAttribute('src', response["28"].image);
+    etcPrice.innerHTML = response["28"].current_price.toLocaleString();
+    etc24HPriceChange.innerHTML = Math.floor(response["28"].price_change_percentage_24h * 100) / 100;
+    etcMarketCap.innerHTML = response["28"].market_cap.toLocaleString();
+    var etc24HPriceChange1 = Math.floor(response["28"].price_change_percentage_24h * 100) / 100;
+    let percentageetc = $('#etc-24h-change');
+    if (etc24HPriceChange1 < 0) {
+      document.getElementById("etc-24h-change").style.color = "#ff0000";
+      percentageetc.text(percentageetc.text() + '%');
+    }
+    else if (etc24HPriceChange1 >= 0) {
+      document.getElementById("etc-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageetc.text(percentageetc.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    algoMarketCapRank.innerHTML = response["29"].market_cap_rank;
+    algoName.innerHTML = response["29"].name;
+    algoSymbol.innerHTML = response["29"].symbol;
+    algoImage.setAttribute('src', response["29"].image);
+    algoPrice.innerHTML = response["29"].current_price.toLocaleString();
+    algo24HPriceChange.innerHTML = Math.floor(response["29"].price_change_percentage_24h * 100) / 100;
+    algoMarketCap.innerHTML = response["29"].market_cap.toLocaleString();
+    var algo24HPriceChange1 = Math.floor(response["29"].price_change_percentage_24h * 100) / 100;
+    let percentagealgo = $('#algo-24h-change');
+    if (algo24HPriceChange1 < 0) {
+      document.getElementById("algo-24h-change").style.color = "#ff0000";
+      percentagealgo.text(percentagealgo.text() + '%');
+    }
+    else if (algo24HPriceChange1 >= 0) {
+      document.getElementById("algo-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagealgo.text(percentagealgo.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    xlmMarketCapRank.innerHTML = response["30"].market_cap_rank;
+    xlmName.innerHTML = response["30"].name;
+    xlmSymbol.innerHTML = response["30"].symbol;
+    xlmImage.setAttribute('src', response["30"].image);
+    xlmPrice.innerHTML = response["30"].current_price.toLocaleString();
+    xlm24HPriceChange.innerHTML = Math.floor(response["30"].price_change_percentage_24h * 100) / 100;
+    xlmMarketCap.innerHTML = response["30"].market_cap.toLocaleString();
+    var xlm24HPriceChange1 = Math.floor(response["30"].price_change_percentage_24h * 100) / 100;
+    let percentagexlm = $('#xlm-24h-change');
+    if (xlm24HPriceChange1 < 0) {
+      document.getElementById("xlm-24h-change").style.color = "#ff0000";
+      percentagexlm.text(percentagexlm.text() + '%');
+    }
+    else if (xlm24HPriceChange1 >= 0) {
+      document.getElementById("xlm-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagexlm.text(percentagexlm.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    okbMarketCapRank.innerHTML = response["31"].market_cap_rank;
+    okbName.innerHTML = response["31"].name;
+    okbSymbol.innerHTML = response["31"].symbol;
+    okbImage.setAttribute('src', response["31"].image);
+    okbPrice.innerHTML = response["31"].current_price.toLocaleString();
+    okb24HPriceChange.innerHTML = Math.floor(response["31"].price_change_percentage_24h * 100) / 100;
+    okbMarketCap.innerHTML = response["31"].market_cap.toLocaleString();
+    var okb24HPriceChange1 = Math.floor(response["31"].price_change_percentage_24h * 100) / 100;
+    let percentageokb = $('#okb-24h-change');
+    if (okb24HPriceChange1 < 0) {
+      document.getElementById("okb-24h-change").style.color = "#ff0000";
+      percentageokb.text(percentageokb.text() + '%');
+    }
+    else if (okb24HPriceChange1 >= 0) {
+      document.getElementById("okb-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageokb.text(percentageokb.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    uniMarketCapRank.innerHTML = response["32"].market_cap_rank;
+    uniName.innerHTML = response["32"].name;
+    uniSymbol.innerHTML = response["32"].symbol;
+    uniImage.setAttribute('src', response["32"].image);
+    uniPrice.innerHTML = response["32"].current_price.toLocaleString();
+    uni24HPriceChange.innerHTML = Math.floor(response["32"].price_change_percentage_24h * 100) / 100;
+    uniMarketCap.innerHTML = response["32"].market_cap.toLocaleString();
+    var uni24HPriceChange1 = Math.floor(response["32"].price_change_percentage_24h * 100) / 100;
+    let percentageuni = $('#uni-24h-change');
+    if (uni24HPriceChange1 < 0) {
+      document.getElementById("uni-24h-change").style.color = "#ff0000";
+      percentageuni.text(percentageuni.text() + '%');
+    }
+    else if (uni24HPriceChange1 >= 0) {
+      document.getElementById("uni-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageuni.text(percentageuni.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    vetMarketCapRank.innerHTML = response["33"].market_cap_rank;
+    vetName.innerHTML = response["33"].name;
+    vetSymbol.innerHTML = response["33"].symbol;
+    vetImage.setAttribute('src', response["33"].image);
+    vetPrice.innerHTML = response["33"].current_price.toLocaleString();
+    vet24HPriceChange.innerHTML = Math.floor(response["33"].price_change_percentage_24h * 100) / 100;
+    vetMarketCap.innerHTML = response["33"].market_cap.toLocaleString();
+    var vet24HPriceChange1 = Math.floor(response["33"].price_change_percentage_24h * 100) / 100;
+    let percentagevet = $('#vet-24h-change');
+    if (vet24HPriceChange1 < 0) {
+      document.getElementById("vet-24h-change").style.color = "#ff0000";
+      percentagevet.text(percentagevet.text() + '%');
+    }
+    else if (vet24HPriceChange1 >= 0) {
+      document.getElementById("vet-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagevet.text(percentagevet.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    hbarMarketCapRank.innerHTML = response["34"].market_cap_rank;
+    hbarName.innerHTML = response["34"].name;
+    hbarSymbol.innerHTML = response["34"].symbol;
+    hbarImage.setAttribute('src', response["34"].image);
+    hbarPrice.innerHTML = response["34"].current_price.toLocaleString();
+    hbar24HPriceChange.innerHTML = Math.floor(response["34"].price_change_percentage_24h * 100) / 100;
+    hbarMarketCap.innerHTML = response["34"].market_cap.toLocaleString();
+    var hbar24HPriceChange1 = Math.floor(response["34"].price_change_percentage_24h * 100) / 100;
+    let percentagehbar = $('#hbar-24h-change');
+    if (hbar24HPriceChange1 < 0) {
+      document.getElementById("hbar-24h-change").style.color = "#ff0000";
+      percentagehbar.text(percentagehbar.text() + '%');
+    }
+    else if (hbar24HPriceChange1 >= 0) {
+      document.getElementById("hbar-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagehbar.text(percentagehbar.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    xmrMarketCapRank.innerHTML = response["35"].market_cap_rank;
+    xmrName.innerHTML = response["35"].name;
+    xmrSymbol.innerHTML = response["35"].symbol;
+    xmrImage.setAttribute('src', response["35"].image);
+    xmrPrice.innerHTML = response["35"].current_price.toLocaleString();
+    xmr24HPriceChange.innerHTML = Math.floor(response["35"].price_change_percentage_24h * 100) / 100;
+    xmrMarketCap.innerHTML = response["35"].market_cap.toLocaleString();
+    var xmr24HPriceChange1 = Math.floor(response["35"].price_change_percentage_24h * 100) / 100;
+    let percentagexmr = $('#xmr-24h-change');
+    if (xmr24HPriceChange1 < 0) {
+      document.getElementById("xmr-24h-change").style.color = "#ff0000";
+      percentagexmr.text(percentagexmr.text() + '%');
+    }
+    else if (xmr24HPriceChange1 >= 0) {
+      document.getElementById("xmr-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagexmr.text(percentagexmr.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    filMarketCapRank.innerHTML = response["36"].market_cap_rank;
+    filName.innerHTML = response["36"].name;
+    filSymbol.innerHTML = response["36"].symbol;
+    filImage.setAttribute('src', response["36"].image);
+    filPrice.innerHTML = response["36"].current_price.toLocaleString();
+    fil24HPriceChange.innerHTML = Math.floor(response["36"].price_change_percentage_24h * 100) / 100;
+    filMarketCap.innerHTML = response["36"].market_cap.toLocaleString();
+    var fil24HPriceChange1 = Math.floor(response["36"].price_change_percentage_24h * 100) / 100;
+    let percentagefil = $('#fil-24h-change');
+    if (fil24HPriceChange1 < 0) {
+      document.getElementById("fil-24h-change").style.color = "#ff0000";
+      percentagefil.text(percentagefil.text() + '%');
+    }
+    else if (fil24HPriceChange1 >= 0) {
+      document.getElementById("fil-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagefil.text(percentagefil.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    icpMarketCapRank.innerHTML = response["37"].market_cap_rank;
+    icpName.innerHTML = response["37"].name;
+    icpSymbol.innerHTML = response["37"].symbol;
+    icpImage.setAttribute('src', response["37"].image);
+    icpPrice.innerHTML = response["37"].current_price.toLocaleString();
+    icp24HPriceChange.innerHTML = Math.floor(response["37"].price_change_percentage_24h * 100) / 100;
+    icpMarketCap.innerHTML = response["37"].market_cap.toLocaleString();
+    var icp24HPriceChange1 = Math.floor(response["37"].price_change_percentage_24h * 100) / 100;
+    let percentageicp = $('#icp-24h-change');
+    if (icp24HPriceChange1 < 0) {
+      document.getElementById("icp-24h-change").style.color = "#ff0000";
+      percentageicp.text(percentageicp.text() + '%');
+    }
+    else if (icp24HPriceChange1 >= 0) {
+      document.getElementById("icp-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageicp.text(percentageicp.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    axsMarketCapRank.innerHTML = response["38"].market_cap_rank;
+    axsName.innerHTML = response["38"].name;
+    axsSymbol.innerHTML = response["38"].symbol;
+    axsImage.setAttribute('src', response["38"].image);
+    axsPrice.innerHTML = response["38"].current_price.toLocaleString();
+    axs24HPriceChange.innerHTML = Math.floor(response["38"].price_change_percentage_24h * 100) / 100;
+    axsMarketCap.innerHTML = response["38"].market_cap.toLocaleString();
+    var axs24HPriceChange1 = Math.floor(response["38"].price_change_percentage_24h * 100) / 100;
+    let percentageaxs = $('#axs-24h-change');
+    if (axs24HPriceChange1 < 0) {
+      document.getElementById("axs-24h-change").style.color = "#ff0000";
+      percentageaxs.text(percentageaxs.text() + '%');
+    }
+    else if (axs24HPriceChange1 >= 0) {
+      document.getElementById("axs-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageaxs.text(percentageaxs.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    egldMarketCapRank.innerHTML = response["39"].market_cap_rank;
+    egldName.innerHTML = response["39"].name;
+    egldSymbol.innerHTML = response["39"].symbol;
+    egldImage.setAttribute('src', response["39"].image);
+    egldPrice.innerHTML = response["39"].current_price.toLocaleString();
+    egld24HPriceChange.innerHTML = Math.floor(response["39"].price_change_percentage_24h * 100) / 100;
+    egldMarketCap.innerHTML = response["39"].market_cap.toLocaleString();
+    var egld24HPriceChange1 = Math.floor(response["39"].price_change_percentage_24h * 100) / 100;
+    let percentageegld = $('#egld-24h-change');
+    if (egld24HPriceChange1 < 0) {
+      document.getElementById("egld-24h-change").style.color = "#ff0000";
+      percentageegld.text(percentageegld.text() + '%');
+    }
+    else if (egld24HPriceChange1 >= 0) {
+      document.getElementById("egld-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageegld.text(percentageegld.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    manaMarketCapRank.innerHTML = response["40"].market_cap_rank;
+    manaName.innerHTML = response["40"].name;
+    manaSymbol.innerHTML = response["40"].symbol;
+    manaImage.setAttribute('src', response["40"].image);
+    manaPrice.innerHTML = response["40"].current_price.toLocaleString();
+    mana24HPriceChange.innerHTML = Math.floor(response["40"].price_change_percentage_24h * 100) / 100;
+    manaMarketCap.innerHTML = response["40"].market_cap.toLocaleString();
+    var mana24HPriceChange1 = Math.floor(response["40"].price_change_percentage_24h * 100) / 100;
+    let percentagemana = $('#mana-24h-change');
+    if (mana24HPriceChange1 < 0) {
+      document.getElementById("mana-24h-change").style.color = "#ff0000";
+      percentagemana.text(percentagemana.text() + '%');
+    }
+    else if (mana24HPriceChange1 >= 0) {
+      document.getElementById("mana-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagemana.text(percentagemana.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    thetaMarketCapRank.innerHTML = response["41"].market_cap_rank;
+    thetaName.innerHTML = response["41"].name;
+    thetaSymbol.innerHTML = response["41"].symbol;
+    thetaImage.setAttribute('src', response["41"].image);
+    thetaPrice.innerHTML = response["41"].current_price.toLocaleString();
+    theta24HPriceChange.innerHTML = Math.floor(response["41"].price_change_percentage_24h * 100) / 100;
+    thetaMarketCap.innerHTML = response["41"].market_cap.toLocaleString();
+    var theta24HPriceChange1 = Math.floor(response["41"].price_change_percentage_24h * 100) / 100;
+    let percentagetheta = $('#theta-24h-change');
+    if (theta24HPriceChange1 < 0) {
+      document.getElementById("theta-24h-change").style.color = "#ff0000";
+      percentagetheta.text(percentagetheta.text() + '%');
+    }
+    else if (theta24HPriceChange1 >= 0) {
+      document.getElementById("theta-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagetheta.text(percentagetheta.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    sandMarketCapRank.innerHTML = response["42"].market_cap_rank;
+    sandName.innerHTML = response["42"].name;
+    sandSymbol.innerHTML = response["42"].symbol;
+    sandImage.setAttribute('src', response["42"].image);
+    sandPrice.innerHTML = response["42"].current_price.toLocaleString();
+    sand24HPriceChange.innerHTML = Math.floor(response["42"].price_change_percentage_24h * 100) / 100;
+    sandMarketCap.innerHTML = response["42"].market_cap.toLocaleString();
+    var sand24HPriceChange1 = Math.floor(response["42"].price_change_percentage_24h * 100) / 100;
+    let percentagesand = $('#sand-24h-change');
+    if (sand24HPriceChange1 < 0) {
+      document.getElementById("sand-24h-change").style.color = "#ff0000";
+      percentagesand.text(percentagesand.text() + '%');
+    }
+    else if (sand24HPriceChange1 >= 0) {
+      document.getElementById("sand-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagesand.text(percentagesand.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    cethMarketCapRank.innerHTML = response["43"].market_cap_rank;
+    cethName.innerHTML = response["43"].name;
+    cethSymbol.innerHTML = response["43"].symbol;
+    cethImage.setAttribute('src', response["43"].image);
+    cethPrice.innerHTML = response["43"].current_price.toLocaleString();
+    ceth24HPriceChange.innerHTML = Math.floor(response["43"].price_change_percentage_24h * 100) / 100;
+    cethMarketCap.innerHTML = response["43"].market_cap.toLocaleString();
+    var ceth24HPriceChange1 = Math.floor(response["43"].price_change_percentage_24h * 100) / 100;
+    let percentageceth = $('#ceth-24h-change');
+    if (ceth24HPriceChange1 < 0) {
+      document.getElementById("ceth-24h-change").style.color = "#ff0000";
+      percentageceth.text(percentageceth.text() + '%');
+    }
+    else if (ceth24HPriceChange1 >= 0) {
+      document.getElementById("ceth-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageceth.text(percentageceth.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    ftmMarketCapRank.innerHTML = response["44"].market_cap_rank;
+    ftmName.innerHTML = response["44"].name;
+    ftmSymbol.innerHTML = response["44"].symbol;
+    ftmImage.setAttribute('src', response["44"].image);
+    ftmPrice.innerHTML = response["44"].current_price.toLocaleString();
+    ftm24HPriceChange.innerHTML = Math.floor(response["44"].price_change_percentage_24h * 100) / 100;
+    ftmMarketCap.innerHTML = response["44"].market_cap.toLocaleString();
+    var ftm24HPriceChange1 = Math.floor(response["44"].price_change_percentage_24h * 100) / 100;
+    let percentageftm = $('#ftm-24h-change');
+    if (ftm24HPriceChange1 < 0) {
+      document.getElementById("ftm-24h-change").style.color = "#ff0000";
+      percentageftm.text(percentageftm.text() + '%');
+    }
+    else if (ftm24HPriceChange1 >= 0) {
+      document.getElementById("ftm-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageftm.text(percentageftm.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    apeMarketCapRank.innerHTML = response["45"].market_cap_rank;
+    apeName.innerHTML = response["45"].name;
+    apeSymbol.innerHTML = response["45"].symbol;
+    apeImage.setAttribute('src', response["45"].image);
+    apePrice.innerHTML = response["45"].current_price.toLocaleString();
+    ape24HPriceChange.innerHTML = Math.floor(response["45"].price_change_percentage_24h * 100) / 100;
+    apeMarketCap.innerHTML = response["45"].market_cap.toLocaleString();
+    var ape24HPriceChange1 = Math.floor(response["45"].price_change_percentage_24h * 100) / 100;
+    let percentageape = $('#ape-24h-change');
+    if (ape24HPriceChange1 < 0) {
+      document.getElementById("ape-24h-change").style.color = "#ff0000";
+      percentageape.text(percentageape.text() + '%');
+    }
+    else if (ape24HPriceChange1 >= 0) {
+      document.getElementById("ape-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageape.text(percentageape.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    klayMarketCapRank.innerHTML = response["46"].market_cap_rank;
+    klayName.innerHTML = response["46"].name;
+    klaySymbol.innerHTML = response["46"].symbol;
+    klayImage.setAttribute('src', response["46"].image);
+    klayPrice.innerHTML = response["46"].current_price.toLocaleString();
+    klay24HPriceChange.innerHTML = Math.floor(response["46"].price_change_percentage_24h * 100) / 100;
+    klayMarketCap.innerHTML = response["46"].market_cap.toLocaleString();
+    var klay24HPriceChange1 = Math.floor(response["46"].price_change_percentage_24h * 100) / 100;
+    let percentageklay = $('#klay-24h-change');
+    if (klay24HPriceChange1 < 0) {
+      document.getElementById("klay-24h-change").style.color = "#ff0000";
+      percentageklay.text(percentageklay.text() + '%');
+    }
+    else if (klay24HPriceChange1 >= 0) {
+      document.getElementById("klay-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageklay.text(percentageklay.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    xtzMarketCapRank.innerHTML = response["47"].market_cap_rank;
+    xtzName.innerHTML = response["47"].name;
+    xtzSymbol.innerHTML = response["47"].symbol;
+    xtzImage.setAttribute('src', response["47"].image);
+    xtzPrice.innerHTML = response["47"].current_price.toLocaleString();
+    xtz24HPriceChange.innerHTML = Math.floor(response["47"].price_change_percentage_24h * 100) / 100;
+    xtzMarketCap.innerHTML = response["47"].market_cap.toLocaleString();
+    var xtz24HPriceChange1 = Math.floor(response["47"].price_change_percentage_24h * 100) / 100;
+    let percentagextz = $('#xtz-24h-change');
+    if (xtz24HPriceChange1 < 0) {
+      document.getElementById("xtz-24h-change").style.color = "#ff0000";
+      percentagextz.text(percentagextz.text() + '%');
+    }
+    else if (xtz24HPriceChange1 >= 0) {
+      document.getElementById("xtz-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagextz.text(percentagextz.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    mimMarketCapRank.innerHTML = response["48"].market_cap_rank;
+    mimName.innerHTML = response["48"].name;
+    mimSymbol.innerHTML = response["48"].symbol;
+    mimImage.setAttribute('src', response["48"].image);
+    mimPrice.innerHTML = response["48"].current_price.toLocaleString();
+    mim24HPriceChange.innerHTML = Math.floor(response["48"].price_change_percentage_24h * 100) / 100;
+    mimMarketCap.innerHTML = response["48"].market_cap.toLocaleString();
+    var mim24HPriceChange1 = Math.floor(response["48"].price_change_percentage_24h * 100) / 100;
+    let percentagemim = $('#mim-24h-change');
+    if (mim24HPriceChange1 < 0) {
+      document.getElementById("mim-24h-change").style.color = "#ff0000";
+      percentagemim.text(percentagemim.text() + '%');
+    }
+    else if (mim24HPriceChange1 >= 0) {
+      document.getElementById("mim-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagemim.text(percentagemim.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    runeMarketCapRank.innerHTML = response["49"].market_cap_rank;
+    runeName.innerHTML = response["49"].name;
+    runeSymbol.innerHTML = response["49"].symbol;
+    runeImage.setAttribute('src', response["49"].image);
+    runePrice.innerHTML = response["49"].current_price.toLocaleString();
+    rune24HPriceChange.innerHTML = Math.floor(response["49"].price_change_percentage_24h * 100) / 100;
+    runeMarketCap.innerHTML = response["49"].market_cap.toLocaleString();
+    var rune24HPriceChange1 = Math.floor(response["49"].price_change_percentage_24h * 100) / 100;
+    let percentagerune = $('#rune-24h-change');
+    if (rune24HPriceChange1 < 0) {
+      document.getElementById("rune-24h-change").style.color = "#ff0000";
+      percentagerune.text(percentagerune.text() + '%');
+    }
+    else if (rune24HPriceChange1 >= 0) {
+      document.getElementById("rune-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagerune.text(percentagerune.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    fraxMarketCapRank.innerHTML = response["50"].market_cap_rank;
+    fraxName.innerHTML = response["50"].name;
+    fraxSymbol.innerHTML = response["50"].symbol;
+    fraxImage.setAttribute('src', response["50"].image);
+    fraxPrice.innerHTML = response["50"].current_price.toLocaleString();
+    frax24HPriceChange.innerHTML = Math.floor(response["50"].price_change_percentage_24h * 100) / 100;
+    fraxMarketCap.innerHTML = response["50"].market_cap.toLocaleString();
+    var frax24HPriceChange1 = Math.floor(response["50"].price_change_percentage_24h * 100) / 100;
+    let percentagefrax = $('#frax-24h-change');
+    if (frax24HPriceChange1 < 0) {
+      document.getElementById("frax-24h-change").style.color = "#ff0000";
+      percentagefrax.text(percentagefrax.text() + '%');
+    }
+    else if (frax24HPriceChange1 >= 0) {
+      document.getElementById("frax-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagefrax.text(percentagefrax.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    grtMarketCapRank.innerHTML = response["51"].market_cap_rank;
+    grtName.innerHTML = response["51"].name;
+    grtSymbol.innerHTML = response["51"].symbol;
+    grtImage.setAttribute('src', response["51"].image);
+    grtPrice.innerHTML = response["51"].current_price.toLocaleString();
+    grt24HPriceChange.innerHTML = Math.floor(response["51"].price_change_percentage_24h * 100) / 100;
+    grtMarketCap.innerHTML = response["51"].market_cap.toLocaleString();
+    var grt24HPriceChange1 = Math.floor(response["51"].price_change_percentage_24h * 100) / 100;
+    let percentagegrt = $('#grt-24h-change');
+    if (grt24HPriceChange1 < 0) {
+      document.getElementById("grt-24h-change").style.color = "#ff0000";
+      percentagegrt.text(percentagegrt.text() + '%');
+    }
+    else if (grt24HPriceChange1 >= 0) {
+      document.getElementById("grt-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagegrt.text(percentagegrt.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    wavesMarketCapRank.innerHTML = response["52"].market_cap_rank;
+    wavesName.innerHTML = response["52"].name;
+    wavesSymbol.innerHTML = response["52"].symbol;
+    wavesImage.setAttribute('src', response["52"].image);
+    wavesPrice.innerHTML = response["52"].current_price.toLocaleString();
+    waves24HPriceChange.innerHTML = Math.floor(response["52"].price_change_percentage_24h * 100) / 100;
+    wavesMarketCap.innerHTML = response["52"].market_cap.toLocaleString();
+    var waves24HPriceChange1 = Math.floor(response["52"].price_change_percentage_24h * 100) / 100;
+    let percentagewaves = $('#waves-24h-change');
+    if (waves24HPriceChange1 < 0) {
+      document.getElementById("waves-24h-change").style.color = "#ff0000";
+      percentagewaves.text(percentagewaves.text() + '%');
+    }
+    else if (waves24HPriceChange1 >= 0) {
+      document.getElementById("waves-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagewaves.text(percentagewaves.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    cakeMarketCapRank.innerHTML = response["53"].market_cap_rank;
+    cakeName.innerHTML = response["53"].name;
+    cakeSymbol.innerHTML = response["53"].symbol;
+    cakeImage.setAttribute('src', response["53"].image);
+    cakePrice.innerHTML = response["53"].current_price.toLocaleString();
+    cake24HPriceChange.innerHTML = Math.floor(response["53"].price_change_percentage_24h * 100) / 100;
+    cakeMarketCap.innerHTML = response["53"].market_cap.toLocaleString();
+    var cake24HPriceChange1 = Math.floor(response["53"].price_change_percentage_24h * 100) / 100;
+    let percentagecake = $('#cake-24h-change');
+    if (cake24HPriceChange1 < 0) {
+      document.getElementById("cake-24h-change").style.color = "#ff0000";
+      percentagecake.text(percentagecake.text() + '%');
+    }
+    else if (cake24HPriceChange1 >= 0) {
+      document.getElementById("cake-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagecake.text(percentagecake.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    aaveMarketCapRank.innerHTML = response["54"].market_cap_rank;
+    aaveName.innerHTML = response["54"].name;
+    aaveSymbol.innerHTML = response["54"].symbol;
+    aaveImage.setAttribute('src', response["54"].image);
+    aavePrice.innerHTML = response["54"].current_price.toLocaleString();
+    aave24HPriceChange.innerHTML = Math.floor(response["54"].price_change_percentage_24h * 100) / 100;
+    aaveMarketCap.innerHTML = response["54"].market_cap.toLocaleString();
+    var aave24HPriceChange1 = Math.floor(response["54"].price_change_percentage_24h * 100) / 100;
+    let percentageaave = $('#aave-24h-change');
+    if (aave24HPriceChange1 < 0) {
+      document.getElementById("aave-24h-change").style.color = "#ff0000";
+      percentageaave.text(percentageaave.text() + '%');
+    }
+    else if (aave24HPriceChange1 >= 0) {
+      document.getElementById("aave-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageaave.text(percentageaave.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    eosMarketCapRank.innerHTML = response["55"].market_cap_rank;
+    eosName.innerHTML = response["55"].name;
+    eosSymbol.innerHTML = response["55"].symbol;
+    eosImage.setAttribute('src', response["55"].image);
+    eosPrice.innerHTML = response["55"].current_price.toLocaleString();
+    eos24HPriceChange.innerHTML = Math.floor(response["55"].price_change_percentage_24h * 100) / 100;
+    eosMarketCap.innerHTML = response["55"].market_cap.toLocaleString();
+    var eos24HPriceChange1 = Math.floor(response["55"].price_change_percentage_24h * 100) / 100;
+    let percentageeos = $('#eos-24h-change');
+    if (eos24HPriceChange1 < 0) {
+      document.getElementById("eos-24h-change").style.color = "#ff0000";
+      percentageeos.text(percentageeos.text() + '%');
+    }
+    else if (eos24HPriceChange1 >= 0) {
+      document.getElementById("eos-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageeos.text(percentageeos.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    osmoMarketCapRank.innerHTML = response["56"].market_cap_rank;
+    osmoName.innerHTML = response["56"].name;
+    osmoSymbol.innerHTML = response["56"].symbol;
+    osmoImage.setAttribute('src', response["56"].image);
+    osmoPrice.innerHTML = response["56"].current_price.toLocaleString();
+    osmo24HPriceChange.innerHTML = Math.floor(response["56"].price_change_percentage_24h * 100) / 100;
+    osmoMarketCap.innerHTML = response["56"].market_cap.toLocaleString();
+    var osmo24HPriceChange1 = Math.floor(response["56"].price_change_percentage_24h * 100) / 100;
+    let percentageosmo = $('#osmo-24h-change');
+    if (osmo24HPriceChange1 < 0) {
+      document.getElementById("osmo-24h-change").style.color = "#ff0000";
+      percentageosmo.text(percentageosmo.text() + '%');
+    }
+    else if (osmo24HPriceChange1 >= 0) {
+      document.getElementById("osmo-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageosmo.text(percentageosmo.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    dfiMarketCapRank.innerHTML = response["57"].market_cap_rank;
+    dfiName.innerHTML = response["57"].name;
+    dfiSymbol.innerHTML = response["57"].symbol;
+    dfiImage.setAttribute('src', response["57"].image);
+    dfiPrice.innerHTML = response["57"].current_price.toLocaleString();
+    dfi24HPriceChange.innerHTML = Math.floor(response["57"].price_change_percentage_24h * 100) / 100;
+    dfiMarketCap.innerHTML = response["57"].market_cap.toLocaleString();
+    var dfi24HPriceChange1 = Math.floor(response["57"].price_change_percentage_24h * 100) / 100;
+    let percentagedfi = $('#dfi-24h-change');
+    if (dfi24HPriceChange1 < 0) {
+      document.getElementById("dfi-24h-change").style.color = "#ff0000";
+      percentagedfi.text(percentagedfi.text() + '%');
+    }
+    else if (dfi24HPriceChange1 >= 0) {
+      document.getElementById("dfi-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagedfi.text(percentagedfi.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    hntMarketCapRank.innerHTML = response["58"].market_cap_rank;
+    hntName.innerHTML = response["58"].name;
+    hntSymbol.innerHTML = response["58"].symbol;
+    hntImage.setAttribute('src', response["58"].image);
+    hntPrice.innerHTML = response["58"].current_price.toLocaleString();
+    hnt24HPriceChange.innerHTML = Math.floor(response["58"].price_change_percentage_24h * 100) / 100;
+    hntMarketCap.innerHTML = response["58"].market_cap.toLocaleString();
+    var hnt24HPriceChange1 = Math.floor(response["58"].price_change_percentage_24h * 100) / 100;
+    let percentagehnt = $('#hnt-24h-change');
+    if (hnt24HPriceChange1 < 0) {
+      document.getElementById("hnt-24h-change").style.color = "#ff0000";
+      percentagehnt.text(percentagehnt.text() + '%');
+    }
+    else if (hnt24HPriceChange1 >= 0) {
+      document.getElementById("hnt-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagehnt.text(percentagehnt.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    flowMarketCapRank.innerHTML = response["59"].market_cap_rank;
+    flowName.innerHTML = response["59"].name;
+    flowSymbol.innerHTML = response["59"].symbol;
+    flowImage.setAttribute('src', response["59"].image);
+    flowPrice.innerHTML = response["59"].current_price.toLocaleString();
+    flow24HPriceChange.innerHTML = Math.floor(response["59"].price_change_percentage_24h * 100) / 100;
+    flowMarketCap.innerHTML = response["59"].market_cap.toLocaleString();
+    var flow24HPriceChange1 = Math.floor(response["59"].price_change_percentage_24h * 100) / 100;
+    let percentageflow = $('#flow-24h-change');
+    if (flow24HPriceChange1 < 0) {
+      document.getElementById("flow-24h-change").style.color = "#ff0000";
+      percentageflow.text(percentageflow.text() + '%');
+    }
+    else if (flow24HPriceChange1 >= 0) {
+      document.getElementById("flow-24h-change").style.color = "rgb(9, 255, 0)";
+      percentageflow.text(percentageflow.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    zecMarketCapRank.innerHTML = response["60"].market_cap_rank;
+    zecName.innerHTML = response["60"].name;
+    zecSymbol.innerHTML = response["60"].symbol;
+    zecImage.setAttribute('src', response["60"].image);
+    zecPrice.innerHTML = response["60"].current_price.toLocaleString();
+    zec24HPriceChange.innerHTML = Math.floor(response["60"].price_change_percentage_24h * 100) / 100;
+    zecMarketCap.innerHTML = response["60"].market_cap.toLocaleString();
+    var zec24HPriceChange1 = Math.floor(response["60"].price_change_percentage_24h * 100) / 100;
+    let percentagezec = $('#zec-24h-change');
+    if (zec24HPriceChange1 < 0) {
+      document.getElementById("zec-24h-change").style.color = "#ff0000";
+      percentagezec.text(percentagezec.text() + '%');
+    }
+    else if (zec24HPriceChange1 >= 0) {
+      document.getElementById("zec-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagezec.text(percentagezec.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    miotaMarketCapRank.innerHTML = response["61"].market_cap_rank;
+    miotaName.innerHTML = response["61"].name;
+    miotaSymbol.innerHTML = response["61"].symbol;
+    miotaImage.setAttribute('src', response["61"].image);
+    miotaPrice.innerHTML = response["61"].current_price.toLocaleString();
+    miota24HPriceChange.innerHTML = Math.floor(response["61"].price_change_percentage_24h * 100) / 100;
+    miotaMarketCap.innerHTML = response["61"].market_cap.toLocaleString();
+    var miota24HPriceChange1 = Math.floor(response["61"].price_change_percentage_24h * 100) / 100;
+    let percentagemiota = $('#miota-24h-change');
+    if (miota24HPriceChange1 < 0) {
+      document.getElementById("miota-24h-change").style.color = "#ff0000";
+      percentagemiota.text(percentagemiota.text() + '%');
+    }
+    else if (miota24HPriceChange1 >= 0) {
+      document.getElementById("miota-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagemiota.text(percentagemiota.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    cusdcMarketCapRank.innerHTML = response["62"].market_cap_rank;
+    cusdcName.innerHTML = response["62"].name;
+    cusdcSymbol.innerHTML = response["62"].symbol;
+    cusdcImage.setAttribute('src', response["62"].image);
+    cusdcPrice.innerHTML = response["62"].current_price.toLocaleString();
+    cusdc24HPriceChange.innerHTML = Math.floor(response["62"].price_change_percentage_24h * 100) / 100;
+    cusdcMarketCap.innerHTML = response["62"].market_cap.toLocaleString();
+    var cusdc24HPriceChange1 = Math.floor(response["62"].price_change_percentage_24h * 100) / 100;
+    let percentagecusdc = $('#cusdc-24h-change');
+    if (cusdc24HPriceChange1 < 0) {
+      document.getElementById("cusdc-24h-change").style.color = "#ff0000";
+      percentagecusdc.text(percentagecusdc.text() + '%');
+    }
+    else if (cusdc24HPriceChange1 >= 0) {
+      document.getElementById("cusdc-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagecusdc.text(percentagecusdc.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    cvxMarketCapRank.innerHTML = response["63"].market_cap_rank;
+    cvxName.innerHTML = response["63"].name;
+    cvxSymbol.innerHTML = response["63"].symbol;
+    cvxImage.setAttribute('src', response["63"].image);
+    cvxPrice.innerHTML = response["63"].current_price.toLocaleString();
+    cvx24HPriceChange.innerHTML = Math.floor(response["63"].price_change_percentage_24h * 100) / 100;
+    cvxMarketCap.innerHTML = response["63"].market_cap.toLocaleString();
+    var cvx24HPriceChange1 = Math.floor(response["63"].price_change_percentage_24h * 100) / 100;
+    let percentagecvx = $('#cvx-24h-change');
+    if (cvx24HPriceChange1 < 0) {
+      document.getElementById("cvx-24h-change").style.color = "#ff0000";
+      percentagecvx.text(percentagecvx.text() + '%');
+    }
+    else if (cvx24HPriceChange1 >= 0) {
+      document.getElementById("cvx-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagecvx.text(percentagecvx.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    xecMarketCapRank.innerHTML = response["64"].market_cap_rank;
+    xecName.innerHTML = response["64"].name;
+    xecSymbol.innerHTML = response["64"].symbol;
+    xecImage.setAttribute('src', response["64"].image);
+    xecPrice.innerHTML = response["64"].current_price.toLocaleString();
+    xec24HPriceChange.innerHTML = Math.floor(response["64"].price_change_percentage_24h * 100) / 100;
+    xecMarketCap.innerHTML = response["64"].market_cap.toLocaleString();
+    var xec24HPriceChange1 = Math.floor(response["64"].price_change_percentage_24h * 100) / 100;
+    let percentagexec = $('#xec-24h-change');
+    if (xec24HPriceChange1 < 0) {
+      document.getElementById("xec-24h-change").style.color = "#ff0000";
+      percentagexec.text(percentagexec.text() + '%');
+    }
+    else if (xec24HPriceChange1 >= 0) {
+      document.getElementById("xec-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagexec.text(percentagexec.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    tfuelMarketCapRank.innerHTML = response["65"].market_cap_rank;
+    tfuelName.innerHTML = response["65"].name;
+    tfuelSymbol.innerHTML = response["65"].symbol;
+    tfuelImage.setAttribute('src', response["65"].image);
+    tfuelPrice.innerHTML = response["65"].current_price.toLocaleString();
+    tfuel24HPriceChange.innerHTML = Math.floor(response["65"].price_change_percentage_24h * 100) / 100;
+    tfuelMarketCap.innerHTML = response["65"].market_cap.toLocaleString();
+    var tfuel24HPriceChange1 = Math.floor(response["65"].price_change_percentage_24h * 100) / 100;
+    let percentagetfuel = $('#tfuel-24h-change');
+    if (tfuel24HPriceChange1 < 0) {
+      document.getElementById("tfuel-24h-change").style.color = "#ff0000";
+      percentagetfuel.text(percentagetfuel.text() + '%');
+    }
+    else if (tfuel24HPriceChange1 >= 0) {
+      document.getElementById("tfuel-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagetfuel.text(percentagetfuel.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    mkrMarketCapRank.innerHTML = response["66"].market_cap_rank;
+    mkrName.innerHTML = response["66"].name;
+    mkrSymbol.innerHTML = response["66"].symbol;
+    mkrImage.setAttribute('src', response["66"].image);
+    mkrPrice.innerHTML = response["66"].current_price.toLocaleString();
+    mkr24HPriceChange.innerHTML = Math.floor(response["66"].price_change_percentage_24h * 100) / 100;
+    mkrMarketCap.innerHTML = response["66"].market_cap.toLocaleString();
+    var mkr24HPriceChange1 = Math.floor(response["66"].price_change_percentage_24h * 100) / 100;
+    let percentagemkr = $('#mkr-24h-change');
+    if (mkr24HPriceChange1 < 0) {
+      document.getElementById("mkr-24h-change").style.color = "#ff0000";
+      percentagemkr.text(percentagemkr.text() + '%');
+    }
+    else if (mkr24HPriceChange1 >= 0) {
+      document.getElementById("mkr-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagemkr.text(percentagemkr.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    bttMarketCapRank.innerHTML = response["67"].market_cap_rank;
+    bttName.innerHTML = response["67"].name;
+    bttSymbol.innerHTML = response["67"].symbol;
+    bttImage.setAttribute('src', response["67"].image);
+    bttPrice.innerHTML = response["67"].current_price.toLocaleString();
+    btt24HPriceChange.innerHTML = Math.floor(response["67"].price_change_percentage_24h * 100) / 100;
+    bttMarketCap.innerHTML = response["67"].market_cap.toLocaleString();
+    var btt24HPriceChange1 = Math.floor(response["67"].price_change_percentage_24h * 100) / 100;
+    let percentagebtt = $('#btt-24h-change');
+    if (btt24HPriceChange1 < 0) {
+      document.getElementById("btt-24h-change").style.color = "#ff0000";
+      percentagebtt.text(percentagebtt.text() + '%');
+    }
+    else if (btt24HPriceChange1 >= 0) {
+      document.getElementById("btt-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagebtt.text(percentagebtt.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    fxsMarketCapRank.innerHTML = response["68"].market_cap_rank;
+    fxsName.innerHTML = response["68"].name;
+    fxsSymbol.innerHTML = response["68"].symbol;
+    fxsImage.setAttribute('src', response["68"].image);
+    fxsPrice.innerHTML = response["68"].current_price.toLocaleString();
+    fxs24HPriceChange.innerHTML = Math.floor(response["68"].price_change_percentage_24h * 100) / 100;
+    fxsMarketCap.innerHTML = response["68"].market_cap.toLocaleString();
+    var fxs24HPriceChange1 = Math.floor(response["68"].price_change_percentage_24h * 100) / 100;
+    let percentagefxs = $('#fxs-24h-change');
+    if (fxs24HPriceChange1 < 0) {
+      document.getElementById("fxs-24h-change").style.color = "#ff0000";
+      percentagefxs.text(percentagefxs.text() + '%');
+    }
+    else if (fxs24HPriceChange1 >= 0) {
+      document.getElementById("fxs-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagefxs.text(percentagefxs.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    zilMarketCapRank.innerHTML = response["69"].market_cap_rank;
+    zilName.innerHTML = response["69"].name;
+    zilSymbol.innerHTML = response["69"].symbol;
+    zilImage.setAttribute('src', response["69"].image);
+    zilPrice.innerHTML = response["69"].current_price.toLocaleString();
+    zil24HPriceChange.innerHTML = Math.floor(response["69"].price_change_percentage_24h * 100) / 100;
+    zilMarketCap.innerHTML = response["69"].market_cap.toLocaleString();
+    var zil24HPriceChange1 = Math.floor(response["69"].price_change_percentage_24h * 100) / 100;
+    let percentagezil = $('#zil-24h-change');
+    if (zil24HPriceChange1 < 0) {
+      document.getElementById("zil-24h-change").style.color = "#ff0000";
+      percentagezil.text(percentagezil.text() + '%');
+    }
+    else if (zil24HPriceChange1 >= 0) {
+      document.getElementById("zil-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagezil.text(percentagezil.text() + '%');
+    }
+
+    ///////////////////////////////////////////////////////////////////
+
+    hbtcMarketCapRank.innerHTML = response["70"].market_cap_rank;
+    hbtcName.innerHTML = response["70"].name;
+    hbtcSymbol.innerHTML = response["70"].symbol;
+    hbtcImage.setAttribute('src', response["70"].image);
+    hbtcPrice.innerHTML = response["70"].current_price.toLocaleString();
+    hbtc24HPriceChange.innerHTML = Math.floor(response["70"].price_change_percentage_24h * 100) / 100;
+    hbtcMarketCap.innerHTML = response["70"].market_cap.toLocaleString();
+    var hbtc24HPriceChange1 = Math.floor(response["70"].price_change_percentage_24h * 100) / 100;
+    let percentagehbtc = $('#hbtc-24h-change');
+    if (hbtc24HPriceChange1 < 0) {
+      document.getElementById("hbtc-24h-change").style.color = "#ff0000";
+      percentagehbtc.text(percentagehbtc.text() + '%');
+    }
+    else if (hbtc24HPriceChange1 >= 0) {
+      document.getElementById("hbtc-24h-change").style.color = "rgb(9, 255, 0)";
+      percentagehbtc.text(percentagehbtc.text() + '%');
+    }
+
+        });
+            $('.buy-btn').attr('href','https://crypto.com/app/m7dzeyyzrr');
+            $('.buy-btn').attr('target','_blank');
   </script>
-
-
 </body>
 
 </html>
